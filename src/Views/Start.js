@@ -5,7 +5,7 @@ function Start() {
     <section className="App-header">
       <div className="contenedor">
         <div className="card">
-          <img src={logo} className='logo' alt="Carlos Boyzo Oregon" />
+          <img src={logo} className='logo' alt="Carlos Boyzo Oregón" />
           <h1>UX-UI DEV ART🔥</h1>
 
           <p className='frase'><q>The true imagination is one that dynamites, elucidates, injects emerald microbes into other imaginations. In poetry and whatever, the entry into matter must already be the entry into adventure.</q>
@@ -14,7 +14,8 @@ function Start() {
             <small>Déjenlo todo, nuevamente by Roberto Bolaño México D. F. - 1976</small></p>
 
           <div className="contenedor-botones">
-            <button className="btn-primario">Arte</button><button className="btn-primario">Diseño</button>
+            <button className="btn-primario">Arte</button>
+            <button className="btn-primario">Diseño</button>
           </div>
 
         </div>
