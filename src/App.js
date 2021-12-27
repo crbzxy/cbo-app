@@ -1,5 +1,5 @@
 
-import './scss/App.scss';
+import './Scss/App.scss';
 import { Routes, Route } from "react-router-dom";
 import Start from "./Views/Start"
 function App() {
