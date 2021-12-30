@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 @import "./libs/mixins";
 @import "./libs/variables";
 @import './libs/type';
@@ -33,6 +34,7 @@ code {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  flex-flow: column;
 }
 
 .card {

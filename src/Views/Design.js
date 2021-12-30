@@ -9,11 +9,7 @@ function Design() {
           <h1>Diseño</h1>
         </div>
       </section>
-      <section>
-        <div className="contenedor">
-          <h1>Diseño</h1>
-        </div>
-      </section>
+
     </>
   )
 }
