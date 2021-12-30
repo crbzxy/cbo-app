@@ -2,8 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
+@import "./libs/mixins";
+@import "./libs/variables";
 @import './libs/type';
+@import "./Components/Navbar";
 
 body {
   background-color: rgb(238, 237, 237);
@@ -30,7 +32,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin: 0 auto;
 }
 
 .card {
@@ -47,11 +49,10 @@ code {
   text-align: justify;
   font-size: 0.8rem;
   padding: 1rem;
+}
 
-  small {
-
-    margin-top: 1rem;
-  }
+small {
+  margin-top: 1rem;
 }
 
 .contenedor-botones {

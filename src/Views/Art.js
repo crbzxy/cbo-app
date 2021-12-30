@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Routes() {
+function Art() {
   return (
     <div>
-      rutas
+      <h1>Arte</h1>
     </div>
   )
 }
 
-export default Routes
+export default Art

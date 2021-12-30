@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route } from "react-router-dom";
-import Start from "./Views/Start"
+
 import './Scss/App.scss';
+
+import GeneralRouter from './Routes/GeneralRouter';
+
+
 
 function App() {
   const [year, setYear] = useState(0);
@@ -12,16 +15,17 @@ function App() {
     getYear();
   }, [])
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Start />} />
+    <>
+      <div className="App">
 
-      </Routes>
+        <GeneralRouter />
+
+      </div>
       <small className="copyright">
-        © {year} Made with 🖤  by <a href="/">Carlos Boyzo Oregon</a> 🔥
-        All Rights Reserved
+        © {year} Hecho con  🖤  por <a href="/">Carlos Boyzo Oregon</a> 🔥
+        Todos los derechos reservados
       </small>
-    </div>
+    </>
   );
 }
 
