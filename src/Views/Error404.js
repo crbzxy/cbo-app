@@ -5,7 +5,7 @@ function Error404() {
     <section>
       <div className="contenedor">
         <h1>Error 404</h1>
-        <p>Páginas no encontrada</p>
+        <p>Página no encontrada</p>
         <Link className="btn-primario" to="/">Regresar al home</Link>
       </div>
     </section>
