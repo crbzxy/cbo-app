@@ -22,7 +22,7 @@ function App() {
 
       </div>
       <small className="copyright">
-        © {year} Hecho con  🖤  por <a href="/">Carlos Boyzo Oregon</a> 🔥
+        © {year} Desarrollado con  🖤  por <a href="/">Carlos Boyzo Oregon</a> 🔥
         Todos los derechos reservados
       </small>
     </>

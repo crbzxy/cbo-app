@@ -4,6 +4,8 @@ import { ExternalLink } from "react-external-link";
 import * as FaIcons from "react-icons/fa";
 import Logo from '../logo.svg';
 //import Logo from "../../img/logo.png";
+import { gsap } from "gsap"
+
 function Navbar() {
   const [click, setClick] = useState(false);
 
@@ -27,6 +29,18 @@ function Navbar() {
       }
     };
   };
+
+
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      defaults: { opacity: 0, duration: 1.2, },
+    })
+    const NavAnimation = document.querySelectorAll(".navbar");
+    tl.from(NavAnimation, { y: -50, stagger: 0.3 })
+
+  }, [])
+
 
   return (
     <nav id="navScr" className="navbar ">
@@ -74,5 +88,6 @@ function Navbar() {
     </nav>
   );
 }
+
 
 export default Navbar;

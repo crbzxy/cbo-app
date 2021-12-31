@@ -1,4 +1,11 @@
 $color1:#646464;
+@import "./libs/mixins";
+@import "./libs/variables";
+@import './libs/type';
+
+html {
+  scroll-behavior: smooth;
+}
 
 .App {
   text-align: center;
@@ -32,10 +39,25 @@ $color1:#646464;
   text-align: center;
   z-index: 4;
   font-size: 9px;
+
+  @include phone {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+  }
 }
 
 a {
   cursor: pointer;
   text-decoration: none;
   color: $color1;
+}
+
+.section {
+  background-color: #0000001f;
+}
+
+.section2 {
+
+  background-color: #3d3c581f;
 }

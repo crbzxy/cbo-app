@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
 import logo from '../logo.svg';
-
+import { gsap } from "gsap"
 function Start() {
+  useEffect(() => {
+    gsap.from('.App-header', {
+      duration: 1.3,
+      y: '100',
+      opacity: 0,
+      ease: 'ease-in',
+    });
+  }, [])
   return (
     <>
 
