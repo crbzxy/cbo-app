@@ -27,14 +27,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: bold;
+    margin: 0.1rem 0.2rem 0.1rem 0.2rem;
+    box-sizing: border-box;
 
     img {
-      max-height: 35px;
+      margin: 4px;
+
+      max-height: 39px;
       max-width: auto;
-      margin-right: 0.2rem;
+
+
     }
 
     @include phone {
@@ -42,6 +44,7 @@
         margin-right: 6px;
         max-height: 25px;
         max-width: auto;
+
       }
     }
   }

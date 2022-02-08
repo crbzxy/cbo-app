@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import './Scss/App.scss';
+import './scss/App.scss';
 
 import GeneralRouter from './Routes/GeneralRouter';
 
@@ -22,7 +22,7 @@ function App() {
 
       </div>
       <small className="copyright">
-        © {year} Desarrollado con  🖤  por <a href="/">Carlos Boyzo Oregon</a> 🔥
+        © {year} Desarrollado con  🖤  por <a className='ml' href="/"> Carlos Boyzo Oregón</a> 🔥
         Todos los derechos reservados
       </small>
     </>
