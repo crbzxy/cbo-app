@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/App.scss';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import GeneralRouter from './Routes/GeneralRouter';
 
 

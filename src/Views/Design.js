@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ExternalLink } from 'react-external-link';
 import { Link } from 'react-router-dom'
 import NavBar from "../Components/NavBar"
 import Me from "../img/me.png"
-
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Colaboradores from "../Components/Colaboradores"
 function Design() {
+  useEffect(() => {
 
+    AOS.init({
+      offset: 120,
+      delay: 20,
+      duration: 500,
+      easing: 'ease-in-out',
+      debounceDelay: 50,
+      throttleDelay: 99,
+      mirror: false,
+      anchorPlacement: 'bottom-top',
+    });
+  }, [])
   return (
     <>
       <NavBar />
-      <section className="App-header ">
+      <section className="App-header " data-aos="fade-in">
         <div className="contenedor">
           <div className="hero">
             <div className="texto">
@@ -27,7 +40,7 @@ function Design() {
           </div>
         </div>
       </section>
-      <section className="section " id='experiencia'>
+      <section className="section " id='experiencia' data-aos="fade-up">
         <div className="contenedor">
 
           <h2>Mis habilidades</h2>
@@ -43,11 +56,11 @@ function Design() {
           </div>
         </div>
       </section>
-      <section className="section2 portafolio ">
+      <section className="section2 portafolio " data-aos="fade-up">
 
         <div className="contenedor ">
-          <small>Portafolio</small>
-          <h2>Un poco de mi trabajo</h2>
+          <small className='text-left'>Portafolio</small>
+          <h2 className='text-left'>Un poco de mi trabajo</h2>
           <div className="contenedor-portafolio">
             <div className="card-portafolio-el"><img src={Me} alt="proyecto" /> <div className="description-work">
               <p className="titulo">lorem</p>
@@ -77,7 +90,7 @@ function Design() {
 
         </div>
       </section>
-      <section className="about">
+      <section className="about" data-aos="fade-up">
         <div className="contenedor">
           <small>Mucho gusto</small>
           <h3>Diseñador UI-UX y desarrollador web con más de 4 años de experiencia.</h3>
@@ -94,12 +107,7 @@ function Design() {
 
       </section>
 
-      <section className="colaboradores">
-        <div className="contenedor">
-          <h4>Colaboraciones y Clientes</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus animi adipisci reprehenderit facere. Nulla fugit quia, eveniet magnam sint unde nisi aut!</p>
-        </div>
-      </section>
+      <Colaboradores />
 
     </>
   )

@@ -1,13 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import logo from '../logo.svg';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 function Start() {
+  useEffect(() => {
 
+    AOS.init({
+      offset: 120,
+      delay: 20,
+      duration: 500,
+      easing: 'ease-in-out',
+      debounceDelay: 50,
+      throttleDelay: 99,
+      mirror: false,
+      anchorPlacement: 'bottom-top',
+    });
+  }, [])
   return (
-    <>
 
-      <section className="App-header">
+
+    <>
+      <section section className="App-header" data-aos="fade-in" >
         <div className="contenedor">
           <div className="card">
             <img src={logo} className='logo' alt="Carlos Boyzo Oregón" />
@@ -25,7 +39,7 @@ function Start() {
 
           </div>
         </div>
-      </section>
+      </section >
     </>
   )
 }
