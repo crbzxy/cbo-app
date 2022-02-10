@@ -328,3 +328,15 @@ small {
 .slick-next {
   right: 5% !important;
 }
+
+form {
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+
+  input {
+    padding: 3px;
+  }
+}

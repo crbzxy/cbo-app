@@ -6,7 +6,14 @@ import Me from "../img/me.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Colaboradores from "../Components/Colaboradores"
+
+//import { useAuth } from '../context/AuthContext'
+
+
 function Design() {
+
+
+
   useEffect(() => {
 
     AOS.init({
