@@ -37,7 +37,7 @@ function Design() {
 
               <h1>Diseñador UI-UX y desarrollador web con más de 4 años de experiencia.</h1>
               <p>
-                Hola, Soy Carlos Boyzo y me enfoco en crear soluciones y experiencias positivas que conecten los objetivos comerciales con las necesidades de los usuarios y empresas.
+                Hola, Soy Carlos Boyzo y me enfoco en crear soluciones y experiencias positivas que conecten los objetivos comerciales y las necesidades de mis colaboradores en diferente sectores.
               </p>
               <p>Actualmente soy Digital Manager en <ExternalLink href="https://go-pharma.mx/"> Go Pharma</ExternalLink></p>
               <Link className="btn-primario" to="/contact">Conversemos 🔥
