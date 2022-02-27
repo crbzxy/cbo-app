@@ -55,7 +55,9 @@ function Start() {
             </small>
 
             <div className="contenedor-botones">
-              <button className="btn-primario">Arte</button>
+              <Link to="/arte" className="btn-primario">
+                Arte
+              </Link>
               <Link to="/design" className="btn-primario">
                 Diseño
               </Link>

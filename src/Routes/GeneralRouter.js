@@ -8,6 +8,7 @@ import { Register } from '../Views/Register'
 import { AuthProvider } from '../context/AuthContext'
 import Cv from '../Views/Cv'
 import { ProtectedRoute } from '../Components/ProtectedRoutes'
+import Arte from '../Views/Art'
 function GeneralRouter() {
   return (
     <>
@@ -19,11 +20,12 @@ function GeneralRouter() {
             <Route path="/design" element={<Design />} />
             <Route path='*' element={<Error404 />} />
             <Route path='/login' element={<Login />} />
+            <Route path='/arte' element={<Arte />} />
             <Route path='/registro' element={<Register />} />
             <Route path='/cv' element={<ProtectedRoute>
 
               <Cv />
-            </ProtectedRoute>} />
+            </ProtectedRoute>} />a
 
           </Routes>
         </AuthProvider>
