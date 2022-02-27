@@ -1,0 +1,68 @@
+$color1:#646464;
+@import "./libs/mixins";
+@import "./libs/variables";
+@import './libs/type';
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  min-height: 52vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #0C0920;
+  background-color: #0C0920;
+}
+
+.App-link {
+  color: $color1;
+}
+
+.copyright {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  z-index: 4;
+  font-size: 9px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include phone {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+  }
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: $color1;
+}
+
+.section {
+  background-color: #878c911f;
+}
+
+.section2 {
+
+  background-color: #ffffff1f;
+}
