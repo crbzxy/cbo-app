@@ -391,7 +391,15 @@ form {
   z-index: -5;
 }
 
-
+.pattern{
+  max-width:280px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  right: 3vh;
+  top: 57vh;
+  z-index: -5;
+}
 my-masonry-grid {
   display: -webkit-box;
 

@@ -77,7 +77,7 @@ function Design() {
 
       </section>
       <section className="section " id='experiencia' data-aos="fade-up">
-        <img src={Pattern} alt="tran" className="circle-blue" />
+        <img src={Pattern} alt="tran" className="pattern" />
         <div className="contenedor">
 
 
