@@ -6,13 +6,38 @@ import Me from "../img/me.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Colaboradores from "../Components/Colaboradores"
-
+import CircleBlue from "../img/circle-blue.png"
+import Pattern from "../img/pattern.png"
+import Masonry from 'react-masonry-css'
+import Foto from "../img/oportunos.png"
+import Foto2 from "../img/girlonrgb.png"
 //import { useAuth } from '../context/AuthContext'
 
 
 function Design() {
-
-
+  var items = [
+    { id: 0, name: 'My  Cero Item', img: `${Foto}` },
+    { id: 1, name: 'My First Item', img: `${Foto2}` },
+    { id: 2, name: 'Another item', img: `${Foto}` },
+    { id: 3, name: 'Third Item', img: `${Foto}` },
+    { id: 4, name: 'Here is the Fourth', img: `${Foto}` },
+    { id: 5, name: 'High Five', img: `${Foto}` }
+  ];
+  items = items.map(function (item) {
+    return <> <div className="card-portafolio-el " key={item.id}>
+      <img src={item.img} alt="proyecto" />
+      <div className="description-work">
+        <h3 className="titulo mt-5">{item.name}</h3>
+        <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptatum!</p>
+      </div>
+    </div></>
+  });
+  const myBreakpointsAndCols = {
+    default: 3,
+    1100: 3,
+    700: 2,
+    500: 1
+  };
 
   useEffect(() => {
 
@@ -26,12 +51,14 @@ function Design() {
       mirror: false,
       anchorPlacement: 'bottom-top',
     });
+
   }, [])
   return (
     <>
       <NavBar />
       <section className="App-header " data-aos="fade-in">
-        <div className="contenedor">
+        <img src={CircleBlue} alt="tran" className="circle-blue" />
+        <div className="contenedor-hero">
           <div className="hero">
             <div className="texto">
 
@@ -46,9 +73,15 @@ function Design() {
             <img className="hero-img" src={Me} alt="" />
           </div>
         </div>
+
+
       </section>
       <section className="section " id='experiencia' data-aos="fade-up">
+        <img src={Pattern} alt="tran" className="circle-blue" />
         <div className="contenedor">
+
+
+
 
           <h2>Mis habilidades</h2>
           <div className="contenedor-experiencia">
@@ -68,30 +101,16 @@ function Design() {
         <div className="contenedor ">
           <small className='text-left'>Portafolio</small>
           <h2 className='text-left'>Un poco de mi trabajo</h2>
-          <div className="contenedor-portafolio">
-            <div className="card-portafolio-el"><img src={Me} alt="proyecto" /> <div className="description-work">
-              <p className="titulo">lorem</p>
-              <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptatum!</p>
-            </div>
-            </div>
+          <div className="masonary-portafolio">
 
-            <div className="card-portafolio-el"><img src={Me} alt="proyecto" /> <div className="description-work">
-              <p className="titulo">lorem</p>
-              <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptatum!</p>
-            </div>
-            </div>
 
-            <div className="card-portafolio-el"><img src={Me} alt="proyecto" /> <div className="description-work">
-              <p className="titulo">lorem</p>
-              <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptatum!</p>
-            </div>
-            </div>
-
-            <div className="card-portafolio-el"><img src={Me} alt="proyecto" /> <div className="description-work">
-              <p className="titulo">lorem</p>
-              <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptatum!</p>
-            </div>
-            </div>
+            <Masonry
+              breakpointCols={myBreakpointsAndCols}
+              className="my-masonry-grid contenedor-portafolio"
+              columnClassName="my-masonry-grid_column"
+            >
+              {items}
+            </Masonry>
 
           </div>
 

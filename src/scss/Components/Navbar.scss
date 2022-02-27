@@ -1,6 +1,6 @@
 .navbar {
   top: 0px;
-  position: absolute;
+  position: absolute !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,6 +20,7 @@
     @include tablet {
       display: block;
       color: $app-2;
+      margin-top: 0.3rem;
     }
   }
 

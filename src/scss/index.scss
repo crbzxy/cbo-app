@@ -9,7 +9,7 @@
 @import "./Components/Navbar";
 
 body {
-  background-color: #f3f3f3;
+  
   overflow-x: hidden;
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -38,7 +38,18 @@ code {
 .contenedor2 {
   max-width: 1080px;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  flex-flow: column;
+}
+.contenedor-hero {
+  max-width: 1080px;
+  width: 100%;
+  min-height: 80vh;
   height: auto;
   display: flex;
   align-items: center;
@@ -118,7 +129,7 @@ small {
   height: auto;
   width: 100%;
   display: flex;
-  background-color: rgb(10, 9, 17);
+  background-color: #2a374d;
   padding: 2rem;
   color: white;
   border-radius: 1rem;
@@ -127,7 +138,7 @@ small {
   box-sizing: border-box;
 
   @include phone {
-    margin-top: 20vh;
+    margin-top: 5vh;
     flex-flow: column;
 
   }
@@ -169,13 +180,14 @@ small {
 
   display: flex;
   text-align: left;
+  
 
   .contenedor-experiencia {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row: auto;
     gap: 1rem;
-
+    margin-bottom: 10vh;
     @include tablet {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -225,14 +237,26 @@ small {
 
 
     .card-portafolio-el {
-      border: 1px solid red;
-      background-color: white;
+      border: 1px solid rgba(197, 197, 197, 0.39);
+      background-color: rgb(243, 243, 243);
       border-radius: 1rem;
       box-sizing: border-box;
       padding: 1rem;
 
       img {
-        max-width: 220px;
+        width: 100%;
+        margin: 0 auto;
+        
+      }
+      .description-work{
+        padding-top: 1rem;
+      }
+      &:hover {
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        background-color: black;
+        color: white;
+        box-shadow: 0 10px 20px rgba(137, 182, 241, 0.445), 0 6px 6px rgba(196, 133, 247, 0.582);
       }
     }
   }
@@ -245,7 +269,7 @@ small {
   justify-content: center;
   padding-top: 6.6vmax;
 
-  background-color: white;
+ 
   height: auto !important;
   min-height: 80vh !important;
 
@@ -257,9 +281,14 @@ small {
 .sociost {
 
   margin-top: 10vh;
-  background-color: white;
-  min-height: 60vh !important;
+  padding-top: 5vh;
+
+  min-height: 80vh !important;
   height: 100%;
+ @include phone{
+   min-height:80vh;
+   margin-bottom: 10vh;
+ } 
 }
 
 .contenedor-socios {
@@ -342,5 +371,50 @@ form {
 
   input {
     padding: 3px;
+  }
+}
+
+.slick-dots li button::before{
+  width:40px !important;
+  height:40px !important;
+}
+
+
+
+.circle-blue{
+  max-width:280px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 3vh;
+  top: 57vh;
+  z-index: -5;
+}
+
+
+my-masonry-grid {
+  display: -webkit-box;
+
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+
+  /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px;
+
+  /* gutter size offset */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px;
+  width: 100% !important;
+  /* gutter size */
+  background-clip: padding-box;
+
+  > div {
+    /* change div to reference your elements you put in <Masonry> */
+    background: grey;
+    margin-bottom: 30px;
   }
 }

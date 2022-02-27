@@ -17,13 +17,14 @@ html {
 }
 
 .App-header {
-  min-height: 70vh;
+  min-height: 52vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(7, 7, 7);
+  color: #0C0920;
+  background-color:#0C0920 ;
 }
 
 .App-link {
@@ -39,7 +40,7 @@ html {
   text-align: center;
   z-index: 4;
   font-size: 9px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.425);
   display: flex;
   align-items: center;
   justify-content: center;
