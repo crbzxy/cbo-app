@@ -8,7 +8,9 @@ html {
 }
 
 .App {
-  text-align: center;
+ 
+text-align: center;
+  p { text-align: left !important;}
 }
 
 .App-logo {
@@ -24,7 +26,7 @@ html {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #0C0920;
-  background-color: #0C0920;
+  background-color: #04020e;
 }
 
 .App-link {

@@ -8,44 +8,11 @@ import "aos/dist/aos.css";
 import Colaboradores from "../Components/Colaboradores";
 import CircleBlue from "../img/circle-blue.png";
 import Pattern from "../img/pattern.png";
-import Masonry from "react-masonry-css";
-import Foto from "../img/oportunos.png";
-import Foto2 from "../img/girlonrgb.png";
+import Portfolio from "../Components/Portfolio";
 //import { useAuth } from '../context/AuthContext'
 
 function Design() {
-  var items = [
-    { id: 0, name: "My  Cero Item", img: `${Foto}` },
-    { id: 1, name: "My First Item", img: `${Foto2}` },
-    { id: 2, name: "Another item", img: `${Foto2}` },
-    { id: 3, name: "Third Item", img: `${Foto2}` },
-    { id: 4, name: "Here is the Fourth", img: `${Foto2}` },
-    { id: 5, name: "High Five", img: `${Foto2}` },
-  ];
 
-  items = items.map(function (item) {
-    return (
-
-
-      <div className="card-portafolio-el " data-aos="fade-up" key={item.id}>
-        <img src={item.img} alt="proyecto" />
-        <div className="description-work">
-          <h3 className="titulo mt-5">{item.name}</h3>
-          <p className="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Obcaecati, voluptatum!
-          </p>
-        </div>
-      </div>
-
-    );
-  });
-  const myBreakpointsAndCols = {
-    default: 3,
-    1100: 3,
-    800: 2,
-    500: 1,
-  };
 
   useEffect(() => {
     AOS.init({
@@ -131,43 +98,33 @@ function Design() {
           </div>
         </div>
       </section>
-      <section className="section2 portafolio " data-aos="fade-up">
-        <div className="contenedor  " data-aos="fade-up">
-          <small className="text-left">Portafolio</small>
-          <h2 className="text-left">Un poco de mi trabajo</h2>
-          <div className="masonary-portafolio">
-            <Masonry
-              breakpointCols={myBreakpointsAndCols}
-              className="my-masonry-grid contenedor-portafolio"
-              columnClassName="my-masonry-grid_column"
-              data-aos="fade-up"
-            >
-              {items}
-            </Masonry>
-          </div>
-        </div>
-      </section>
-      <section className="about" data-aos="fade-up">
-        <div className="contenedor">
-          <small>Mucho gusto</small>
-          <h3>
-            Diseñador UI-UX y desarrollador web con más de 4 años de
-            experiencia.
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum
-            perferendis ipsam tempora voluptatem commodi. Dignissimos quibusdam
-            deserunt tenetur porro beatae qui.
-          </p>
-          <p>Sigueme en mis redes sociales</p>
-          <ul>
-            <li>rss</li>
-            <li>rss</li>
-            <li>rss</li>
-          </ul>
-          <Link className="btn-primario" to="/contact">
-            Conversemos 🔥
-          </Link>
+      {/* Portafolio */}
+      <Portfolio />
+
+      <section className="about mt-5 mb-5" data-aos="fade-up">
+        <div className=" d-flex container">
+          <div className="col  text-left"><img src="/" alt="imagen" /></div>
+          <div className="col text-left  d-flex-column">
+            <small>Mucho gusto</small>
+            <br />
+            <h3>
+              Diseñador UI-UX y desarrollador web con más de 4 años de
+              experiencia.
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, earum
+              perferendis ipsam tempora voluptatem commodi. Dignissimos quibusdam
+              deserunt tenetur porro beatae qui.
+            </p>
+            <p>Sigueme en mis redes sociales</p>
+            <ul>
+              <li>rss</li>
+              <li>rss</li>
+              <li>rss</li>
+            </ul>
+            <Link className="btn-primario" to="/contact">
+              Conversemos 🔥
+            </Link></div>
         </div>
       </section>
 
