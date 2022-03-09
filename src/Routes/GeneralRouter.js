@@ -25,7 +25,7 @@ function GeneralRouter() {
             <Route path='/cv' element={<ProtectedRoute>
 
               <Cv />
-            </ProtectedRoute>} />a
+            </ProtectedRoute>} />
 
           </Routes>
         </AuthProvider>
