@@ -45,16 +45,12 @@ function Navbar() {
           <li> Portafolio </li> {/* {dropdown && <Dropdown />} */}
         </Link>
         <Link to="/about" className="navbar_menu_link" onClick={closeMobileMenu}>
-          <li> Acerca de mí </li>
+          <li> Sobre mí </li>
         </Link>
 
-        <Link
-          to="/services"
-          className="navbar_menu_button navbar_menu_link"
-          onClick={closeMobileMenu}
-        >
-          <li> CV </li>
-        </Link>
+
+        <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO.pdf?alt=media&token=1bf21c9a-0e5a-418e-a167-c2555bdd58a6" download>CV </a>
+
         <Link
           to="/contact"
           className="navbar_menu_button navbar_menu_link"
