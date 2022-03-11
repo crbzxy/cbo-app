@@ -5,12 +5,14 @@ import Foto2 from "../img/girlonrgb.png";
 import { Link } from 'react-router-dom'
 function Portfolio() {
   var items = [
-    { id: 0, name: "My  Cero Item", img: `${Foto}`, link: '/cv' },
-    { id: 1, name: "My First Item", img: `${Foto2}`, link: '/arte' },
-    { id: 2, name: "Another item", img: `${Foto2}`, link: '/cv' },
-    { id: 3, name: "Third Item", img: `${Foto2}`, link: '/cv' },
-    { id: 4, name: "Here is the Fourth", img: `${Foto2}`, link: '/cv' },
-    { id: 5, name: "High Five", img: `${Foto2}`, link: '/cv' },
+    { id: 0, name: "Oportunos.mx", img: `${Foto}`, link: '/oportunos' },
+    { id: 1, name: "Galería Unión", img: `${Foto2}`, link: '/galaria-union' },
+    { id: 2, name: "Lapi", img: `${Foto2}`, link: '/lapi' },
+    { id: 3, name: "Ecoglobe", img: `${Foto2}`, link: '/ecoglobe' },
+    { id: 4, name: "Ship Guru", img: `${Foto2}`, link: '/Ship Guru' },
+    { id: 5, name: "Adsu", img: `${Foto2}`, link: '/adsu' },
+    { id: 5, name: "Canalla Neza", img: `${Foto2}`, link: '/canalla-neza' },
+    { id: 5, name: "Go pharma", img: `${Foto2}`, link: '/canalla-neza' },
   ];
 
   items = items.map(function (item) {
@@ -40,7 +42,7 @@ function Portfolio() {
   };
 
   return (
-    <section className="section2 portafolio " data-aos="fade-up">
+    <section className="section2 portafolio mt-5 " data-aos="fade-up">
       <div className="contenedor  " data-aos="fade-up">
         <small className="text-left">Portafolio</small>
         <h2 className="text-left">Un poco de mi trabajo</h2>

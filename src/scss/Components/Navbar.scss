@@ -1,6 +1,6 @@
 .navbar {
   top: 0px;
-  position: absolute !important;
+  position: fixed !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,7 +94,7 @@
   & .active {
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     opacity: 1;
-    top: 64px;
+    top: 54px;
     flex-flow: column;
     position: absolute;
     background-color: #000000;

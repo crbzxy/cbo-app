@@ -42,10 +42,10 @@ function Navbar() {
       </Link>
       <ul className={click ? "navbar_menu active " : "navbar_menu"}>
         <Link to="/work" className="navbar_menu_link" onClick={closeMobileMenu}>
-          <li> Work </li> {/* {dropdown && <Dropdown />} */}
+          <li> Portafolio </li> {/* {dropdown && <Dropdown />} */}
         </Link>
         <Link to="/about" className="navbar_menu_link" onClick={closeMobileMenu}>
-          <li> About </li>
+          <li> Acerca de mí </li>
         </Link>
 
         <Link
@@ -53,14 +53,14 @@ function Navbar() {
           className="navbar_menu_button navbar_menu_link"
           onClick={closeMobileMenu}
         >
-          <li> Services </li>
+          <li> CV </li>
         </Link>
         <Link
           to="/contact"
           className="navbar_menu_button navbar_menu_link"
           onClick={closeMobileMenu}
         >
-          <li> Contact </li>
+          <li> Contacto </li>
         </Link>
         <ExternalLink href="https://www.instagram.com/perrodimensional/">
           <li>
