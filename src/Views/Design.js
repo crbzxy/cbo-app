@@ -3,7 +3,7 @@ import { ExternalLink } from "react-external-link";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import NavBar from "../Components/NavBar";
-import Me from "../img/me.png";
+import Me from "../img/me-moshed.gif";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Colaboradores from "../Components/Colaboradores";
@@ -63,32 +63,32 @@ function Design() {
 
       <section className="section " id="experiencia" data-aos="fade-up">
         <img src={Pattern} alt="tran" className="pattern" />
-        <div className="contenedor">
+        <div className="contenedor text-left">
+
           <h2>Mis servicios</h2>
           <div className="contenedor-experiencia">
             <div className="experiencia-card">
-              <p className="titulo">
-                Dirección de arte,
-                comunicación y estrategia
-              </p>
+              <h3 className="titulo">
+                Estrategia y Dirección
+              </h3>
               <p>
                 Planifiquemos  el desarrollo  por el camino más adecuado para lograr tus objetivos de comunicación digital.
               </p>
             </div>
             <div className="experiencia-card">
-              <p className="titulo">Diseño UI/UX</p>
+              <h3 className="titulo">Diseño UI/UX</h3>
               <p>
                 Construyamos soluciones e iteraciones con el uso de herramientas y metodologóas para una mejor experiencia de los usuarios.
               </p>
             </div>
             <div className="experiencia-card">
-              <p className="titulo">Desarrollo Web</p>
+              <h3 className="titulo">Desarrollo Web</h3>
               <p>
                 Me encanta participar y trbajar en proyectos basados en tecnologías nuevas.
               </p>
             </div>
             <div className="experiencia-card">
-              <p className="titulo">Optimización SEO</p>
+              <h3 className="titulo">Optimización SEO</h3>
               <p>
                 Obtén más tráfico a tu sitio web, aparece en los buscadores y administra tu presencia digital.
               </p>
