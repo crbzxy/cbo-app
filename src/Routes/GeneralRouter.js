@@ -9,6 +9,14 @@ import { AuthProvider } from '../context/AuthContext'
 import Cv from '../Views/Cv'
 import { ProtectedRoute } from '../Components/ProtectedRoutes'
 import Arte from '../Views/Art'
+import Oportunos from '../Views/proyects/Oportunos'
+import GaleriaUnion from '../Views/proyects/GaleriaUnion'
+import Lapi from '../Views/proyects/Lapi'
+import Ecoglobe from '../Views/proyects/Ecoglobe'
+import ShipGuru from '../Views/proyects/ShipGuru'
+import Adsu from '../Views/proyects/Adsu'
+import Canalla from '../Views/proyects/Canalla'
+import GoPharma from '../Views/proyects/GoPharma'
 function GeneralRouter() {
   return (
     <>
@@ -26,6 +34,15 @@ function GeneralRouter() {
 
               <Cv />
             </ProtectedRoute>} />
+            <Route path='/oportunos' element={<Oportunos />} />
+            <Route path='/galeria-union' element={<GaleriaUnion />} />
+            <Route path='/lapi' element={<Lapi />} />
+            <Route path='/ecoglobe' element={<Ecoglobe />} />
+            <Route path='/shipguru' element={<ShipGuru />} />
+            <Route path='/adsu' element={<Adsu />} />
+            <Route path='/canalla-neza' element={<Canalla />} />
+            <Route path='/go-pharma' element={<GoPharma />} />
+
 
           </Routes>
         </AuthProvider>
