@@ -104,7 +104,7 @@ function Design() {
       {/* About */}
       <section className="about  mb-5" data-aos="fade-up">
         <div className=" d-flex container">
-          <div className="col  text-left"><img src={Me} alt="tran" style={{ filter: `blur(10px)`, padding: '16px' }} /></div>
+          <div className="col  text-left"><img src={Me} alt="tran" style={{ filter: `blur(2px)`, borderRadius: '400px', margin: " auto", maxWidth: '400px', margin: '16px', boxSizing: 'border-box', backgroundColor: '#101835' }} /></div>
           <div className="col text-left  ">
             <small>Mucho gusto</small>
             <br />
