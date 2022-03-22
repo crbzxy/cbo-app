@@ -37,7 +37,7 @@ function Design() {
           <div className="hero">
             <div className="texto">
               <h1>
-                Diseñador UI-UX y desarrollador web con más de 4 años de
+                Diseñador y desarrollador web  UI-UX con más de 4 años de
                 experiencia.
               </h1>
               <p>
@@ -84,7 +84,7 @@ function Design() {
             <div className="experiencia-card">
               <h3 className="titulo">Desarrollo Web</h3>
               <p>
-                Me encanta participar y trbajar en proyectos basados en tecnologías nuevas.
+                Me encanta participar y trabajar en proyectos basados en tecnologías nuevas.
               </p>
             </div>
             <div className="experiencia-card">
@@ -104,24 +104,24 @@ function Design() {
       {/* About */}
       <section className="about  mb-5" data-aos="fade-up">
         <div className=" d-flex container">
-          <div className="col  text-left"><img src={Me} alt="tran" style={{ filter: `blur(2px)`, borderRadius: '400px', margin: " auto", maxWidth: '400px', margin: '16px', boxSizing: 'border-box', backgroundColor: '#101835' }} /></div>
+          <div className="col  text-left"><img src={Me} alt="tran" style={{ filter: `blur(2px)`, borderRadius: '400px', maxWidth: '400px', margin: '16px', boxSizing: 'border-box', backgroundColor: '#101835' }} /></div>
           <div className="col text-left  ">
             <small>Mucho gusto</small>
             <br />
             <h3>
-              Diseñador UI-UX y desarrollador web con más de 4 años de
+              Diseñador y desarrollador web  UI-UX con más de 4 años de
               experiencia.
             </h3>
             <p>
               He trabajado como consultor en desarrollo web ui-ux, creativo y manager para distintos clientes.
             </p>
             <p className="titulo">
-              Áreas de conocimiento
+              Competencias técnicas
             </p>
             <ul>
-              <li>Desarrollo, diseño y resolución de problemas de manera creativa para productos digitales.</li>
-              <li> Buen manejo tecnico de herramientas web.</li>
-              <li>Entendimiento de nuevas tecnologias en general. </li>
+              <li>Diseño gráfico y comunicación visual para  wireframes y prototipos.</li>
+              <li>Entendimiento de legunajes de programación.</li>
+              <li>Desarrollo web </li>
               <li>Experiencia como como lider en equipos 2 o más integrantes.</li>
             </ul>
             <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO-ESP.pdf?alt=media&token=9e7323eb-9571-45f8-b701-b306ad3ba1a8" download className="btn-primario"> Descarga mi CV </a>
