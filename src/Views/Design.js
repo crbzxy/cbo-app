@@ -119,9 +119,9 @@ function Design() {
               Áreas de conocimiento
             </p>
             <ul>
-              <li>Desarrollo, diseño y resolución de problemas de manera creativa para productos digitales.</li>
-              <li> Buen manejo tecnico de herramientas web.</li>
-              <li>Entendimiento de nuevas tecnologias en general. </li>
+              <li>Manejo eficiente de herramientas de prototipado como adobe XD,Figma</li>
+              <li>Entendimiento de legunajes de programación</li>
+              <li>Diseño y desarrollo web en general. </li>
               <li>Experiencia como como lider en equipos 2 o más integrantes.</li>
             </ul>
             <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO.pdf?alt=media&token=1bf21c9a-0e5a-418e-a167-c2555bdd58a6" download className="btn-primario"> Descarga mi CV </a>
