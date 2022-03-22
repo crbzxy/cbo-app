@@ -37,7 +37,7 @@ function Design() {
           <div className="hero">
             <div className="texto">
               <h1>
-                Diseñador UI-UX y desarrollador web con más de 4 años de
+                Diseñador y desarrollador web  UI-UX con más de 4 años de
                 experiencia.
               </h1>
               <p>
@@ -84,7 +84,7 @@ function Design() {
             <div className="experiencia-card">
               <h3 className="titulo">Desarrollo Web</h3>
               <p>
-                Me encanta participar y trbajar en proyectos basados en tecnologías nuevas.
+                Me encanta participar y trabajar en proyectos basados en tecnologías nuevas.
               </p>
             </div>
             <div className="experiencia-card">
@@ -109,19 +109,19 @@ function Design() {
             <small>Mucho gusto</small>
             <br />
             <h3>
-              Diseñador UI-UX y desarrollador web con más de 4 años de
+              Diseñador y desarrollador web  UI-UX con más de 4 años de
               experiencia.
             </h3>
             <p>
               He trabajado como consultor en desarrollo web ui-ux, creativo y manager para distintos clientes.
             </p>
             <p className="titulo">
-              Áreas de conocimiento
+              Competencias técnicas
             </p>
             <ul>
-              <li>Manejo eficiente de herramientas de prototipado como adobe XD,Figma</li>
-              <li>Entendimiento de legunajes de programación</li>
-              <li>Diseño y desarrollo web en general. </li>
+              <li>Diseño gráfico y comunicación visual para  wireframes y prototipos.</li>
+              <li>Entendimiento de legunajes de programación.</li>
+              <li>Desarrollo web </li>
               <li>Experiencia como como lider en equipos 2 o más integrantes.</li>
             </ul>
             <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO.pdf?alt=media&token=1bf21c9a-0e5a-418e-a167-c2555bdd58a6" download className="btn-primario"> Descarga mi CV </a>
