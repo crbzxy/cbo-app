@@ -41,18 +41,18 @@ function Navbar() {
         <span>  </span>
       </Link>
       <ul className={click ? "navbar_menu active " : "navbar_menu"}>
-        <Link to="/work" className="navbar_menu_link" onClick={closeMobileMenu}>
+        <a href="#portafolio" className="navbar_menu_link" onClick={closeMobileMenu}>
           <li> Portafolio </li> {/* {dropdown && <Dropdown />} */}
-        </Link>
-        <Link to="/about" className="navbar_menu_link" onClick={closeMobileMenu}>
+        </a>
+        <a href="#sobremi" className="navbar_menu_link" onClick={closeMobileMenu}>
           <li> Sobre mí </li>
-        </Link>
+        </a>
 
 
         <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO-ESP.pdf?alt=media&token=9e7323eb-9571-45f8-b701-b306ad3ba1a8" download>CV </a>
 
         <Link
-          to="/contact"
+          to="/contacto"
           className="navbar_menu_button navbar_menu_link"
           onClick={closeMobileMenu}
         >

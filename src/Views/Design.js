@@ -10,7 +10,9 @@ import Colaboradores from "../Components/Colaboradores";
 import CircleBlue from "../img/circle-blue.png";
 import Pattern from "../img/pattern.png";
 import Portfolio from "../Components/Portfolio";
+import { Helmet } from "react-helmet-async";
 //import { useAuth } from '../context/AuthContext'
+
 
 function Design() {
 
@@ -28,8 +30,13 @@ function Design() {
     });
   }, []);
 
+
   return (
     <>
+      <Helmet>
+        <title>CBO - Diseño</title>
+        <link rel="canonical" href="https://www.carlosboyzo.com/" />
+      </Helmet>
       <NavBar />
       <section className="App-header " data-aos="fade-in">
         <img src={CircleBlue} alt="tran" className="circle-blue" />
@@ -102,6 +109,8 @@ function Design() {
       {/* Portafolio */}
 
       {/* About */}
+      <br />
+      <span id="sobremi" />
       <section className="about  mb-5" data-aos="fade-up">
         <div className=" d-flex container">
           <div className="col  text-left"><img src={Me} alt="tran" style={{ filter: `blur(2px)`, borderRadius: '400px', maxWidth: '400px', margin: '16px', boxSizing: 'border-box', backgroundColor: '#101835' }} /></div>
