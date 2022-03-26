@@ -129,8 +129,7 @@ function Design() {
             </p>
             <ul>
               <li>Diseño gráfico y comunicación visual para  wireframes y prototipos.</li>
-              <li>Entendimiento de legunajes de programación.</li>
-              <li>Desarrollo web </li>
+              <li>Entendimiento de legunajes de programación web.</li>
               <li>Experiencia como como lider en equipos 2 o más integrantes.</li>
             </ul>
             <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO-ESP.pdf?alt=media&token=9e7323eb-9571-45f8-b701-b306ad3ba1a8" download className="btn-primario"> Descarga mi CV </a>
