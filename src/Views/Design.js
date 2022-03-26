@@ -43,14 +43,14 @@ function Design() {
         <div className="contenedor-hero">
           <div className="hero">
             <div className="texto">
+              <small>Hola, Soy</small>
+              <br />
               <h1>
-                Diseñador y desarrollador web  UI-UX con más de 4 años de
-                experiencia.
+                Carlos Boyzo, Diseñador y Dev web UI-UX-IXD.
               </h1>
+
               <p>
-                Hola, Soy Carlos Boyzo y me enfoco en crear soluciones y
-                experiencias positivas que conecten los objetivos comerciales y
-                las necesidades de mis colaboradores en diferente sectores.
+                Hola, me enfoco en crear soluciones y experiencias digitales  positivas,  que conecten  los objetivos comerciales de mis clientes en diferentes verticales de negocio.
               </p>
               <p>
                 Actualmente soy Digital Manager en{" "}
@@ -60,7 +60,7 @@ function Design() {
                 </ExternalLink>
               </p>
               <Link className="btn-primario" to="/contacto">
-                Conversemos 🔥
+                ✌🏼 Conversemos
               </Link>
             </div>
             <img className="hero-img" src={Me} alt="" />
@@ -76,30 +76,39 @@ function Design() {
           <div className="contenedor-experiencia">
             <div className="experiencia-card">
               <h3 className="titulo">
-                Estrategia y Dirección
+                Estrategia y Dirección digital
               </h3>
               <p>
-                Planifiquemos  el desarrollo  por el camino más adecuado para lograr tus objetivos de comunicación digital.
+                Planifiquemos el desarrollo por el camino más adecuado para lograr tus objetivos de comunicación digital.
               </p>
             </div>
             <div className="experiencia-card">
-              <h3 className="titulo">Diseño UI/UX</h3>
+              <h3 className="titulo">Diseño UI/UX/IXD</h3>
               <p>
-                Construyamos soluciones e iteraciones con el uso de herramientas y metodologóas para una mejor experiencia de los usuarios.
+                Construyamos soluciones, prototipos y  wireframes, con herramientas y metodologías para una mejor experiencia de los usuarios en productos y comunicación digital.
               </p>
             </div>
             <div className="experiencia-card">
               <h3 className="titulo">Desarrollo Web</h3>
               <p>
-                Me encanta participar y trabajar en proyectos basados en tecnologías nuevas.
+                Usemos herramientas eficientes, con presupuestos a la medida y avancemos al siguiente nivel, usando tecnologías nuevas con las mejores prácticas.
               </p>
             </div>
             <div className="experiencia-card">
               <h3 className="titulo">Optimización SEO</h3>
               <p>
-                Obtén más tráfico a tu sitio web, aparece en los buscadores y administra tu presencia digital.
+                Obtén más tráfico en  tus productos digitales, aparece en los principales buscadores y administra tu presencia digital para mejorar tus campañas publicitarias y posicionamiento.
+
               </p>
             </div>
+
+            <div className="experiencia-card">
+              <h3 className="titulo">Arte Digital </h3>
+              <p>
+                Generemos diseño, videos y recursos de apoyo al área comercial para que tu marca o producto digital destaque todo su potencial.
+              </p>
+            </div>
+
           </div>
         </div>
       </section>
@@ -118,19 +127,18 @@ function Design() {
             <small>Mucho gusto</small>
             <br />
             <h3>
-              Diseñador y desarrollador web  UI-UX con más de 4 años de
-              experiencia.
+              Soy Diseñador y desarrollador web UI-UX-IXD con más de 4 años de experiencia.
             </h3>
             <p>
-              He trabajado como consultor en desarrollo web ui-ux, creativo y manager para distintos clientes.
+              He trabajado como consultor en desarrollo web, creativo y manager para distintos clientes.
             </p>
             <p className="titulo">
               Competencias técnicas
             </p>
             <ul>
-              <li>Diseño gráfico y comunicación visual para  wireframes y prototipos.</li>
-              <li>Entendimiento de legunajes de programación web.</li>
-              <li>Experiencia como como lider en equipos 2 o más integrantes.</li>
+              <li>Diseño gráfico y comunicación visual para  wireframes y prototipos</li>
+              <li>Entendimiento de legunajes de programación web</li>
+              <li>Experiencia como como lider en equipos</li>
             </ul>
             <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO-ESP.pdf?alt=media&token=9e7323eb-9571-45f8-b701-b306ad3ba1a8" download className="btn-primario"> Descarga mi CV </a>
             <p>Sigueme en mis redes sociales</p>
