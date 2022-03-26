@@ -462,3 +462,32 @@ my-masonry-grid {
   justify-content: space-between;
   list-style: none;
 }
+
+.contacto{
+  height:auto;
+  display: flex !important;
+  flex-flow: row ;
+  .col-img{
+    flex: 1;
+  }
+@include tablet{
+  flex-flow: column;
+}
+}
+.contact-form{
+  input{
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 0.5rem;
+  }
+  button{margin-left:0px;}
+  @include tablet{
+    align-items: center;
+  }
+}
+
+.about-container{
+  @include tablet{
+    flex-flow: column !important;
+  }
+}

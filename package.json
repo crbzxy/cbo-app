@@ -1,6 +1,6 @@
 {
   "name": "cbo-app",
-  "proxy": "http://localhost:4000",
+  "proxy": "https://carlosboyzo.com/send_email/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

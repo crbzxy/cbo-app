@@ -59,7 +59,7 @@ function Design() {
                   Go Pharma
                 </ExternalLink>
               </p>
-              <Link className="btn-primario" to="/contact">
+              <Link className="btn-primario" to="/contacto">
                 Conversemos 🔥
               </Link>
             </div>
@@ -112,8 +112,8 @@ function Design() {
       <br />
       <span id="sobremi" />
       <section className="about  mb-5" data-aos="fade-up">
-        <div className=" d-flex container">
-          <div className="col  text-left"><img src={Me} alt="tran" style={{ filter: `blur(2px)`, borderRadius: '400px', maxWidth: '400px', margin: '16px', boxSizing: 'border-box', backgroundColor: '#101835' }} /></div>
+        <div className=" d-flex container about-container">
+          <div className="col  text-left"><img src={Me} alt="tran" style={{ filter: `blur(2px)`, borderRadius: '400px', maxWidth: '370px', margin: '16px', boxSizing: 'border-box', backgroundColor: '#101835' }} /></div>
           <div className="col text-left  ">
             <small>Mucho gusto</small>
             <br />

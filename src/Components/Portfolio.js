@@ -13,8 +13,8 @@ function Portfolio() {
     { id: 3, name: "Ecoglobe", img: `${Foto2}`, link: '/ecoglobe' },
     { id: 4, name: "Ship Guru", img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/shipguru.png?alt=media&token=cf9353ff-9231-43d5-a965-674e236941f5`, link: '/shipguru' },
     { id: 5, name: "ADSU", img: `${Foto2}`, link: '/adsu' },
-    { id: 5, name: "Canalla Neza", img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/Canalla.png?alt=media&token=278691b1-d8e8-47be-aa3b-a9255d6ffa59`, link: '/canalla-neza' },
-    { id: 5, name: "Go pharma", img: `${Foto2}`, link: '/go-pharma' },
+    { id: 6, name: "Canalla Neza", img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/Canalla.png?alt=media&token=278691b1-d8e8-47be-aa3b-a9255d6ffa59`, link: '/canalla-neza' },
+    { id: 7, name: "Go pharma", img: `${Foto2}`, link: '/go-pharma' },
   ];
 
   proyectos = proyectos.map(function (item) {
