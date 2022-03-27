@@ -66,6 +66,7 @@
       font-weight: 400;
       color: $app-1;
       cursor: pointer;
+      display: block;
 
       &:hover {
         li {
@@ -164,3 +165,4 @@
     background-color: $app-2;
   }
 }
+

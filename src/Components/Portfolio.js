@@ -3,7 +3,7 @@ import Masonry from "react-masonry-css";
 import Foto from "../img/oportunos.png";
 import Foto2 from "../img/girlonrgb.png";
 import { Link } from 'react-router-dom'
-
+import Pattern2 from '../img/pattern2.png'
 
 function Portfolio() {
   var proyectos = [
@@ -49,6 +49,7 @@ function Portfolio() {
 
     <>
       <div id="portafolio" />
+      <img src={Pattern2} alt="tran" className="pattern2" data-aos="fade-up" />
       <section className="section2 portafolio mt-5 " data-aos="fade-up">
         <div className="contenedor  " data-aos="fade-up">
           <small className="titulo" style={{ fontSize: "95%", paddingBottom: "0px !important" }}>Portafolio</small>

@@ -416,6 +416,37 @@ form {
   }
 }
 
+.pattern2 {
+  position: relative;
+  max-width: 280px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+left: 3vh;
+  top: 297vh;
+  z-index: -5;
+  @include phone{
+    max-width: 150px;
+  }
+}
+
+.pattern3 {
+  position: relative;
+  max-width: 150px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+right: 3vh;
+  top:370vh;
+  z-index: -5;
+  opacity: 0.7;
+  @include phone{
+    max-width: 150px;
+  }
+}
+
+
+
 my-masonry-grid {
   display: -webkit-box;
 
@@ -467,6 +498,7 @@ my-masonry-grid {
   height:auto;
   display: flex !important;
   flex-flow: row ;
+  
   .col-img{
     flex: 1;
   }
@@ -490,4 +522,16 @@ my-masonry-grid {
   @include tablet{
     flex-flow: column !important;
   }
+}
+
+p.position{
+text-align: center !important;
+color: rgb(33, 30, 51);
+margin:auto;
+}
+
+
+
+.visible {
+  display: block;
 }

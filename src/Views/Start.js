@@ -44,7 +44,8 @@ function Start() {
           {user && <small>Hola {user.email}</small>}
           <div className="card">
             <img src={logo} className="logo" alt="Carlos Boyzo Oregón" />
-            <h1>UX-UI DEV ART</h1>
+            <h1>Carlos Boyzo Oregón</h1>
+            <p className="position" >UX-UI-IXD DEV WEB ARTIST</p>
 
             <p className="frase">
               <q>

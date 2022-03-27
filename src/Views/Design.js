@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import Colaboradores from "../Components/Colaboradores";
 import CircleBlue from "../img/circle-blue.png";
 import Pattern from "../img/pattern.png";
+import Pattern3 from "../img/pattern3.png"
 import Portfolio from "../Components/Portfolio";
 import { Helmet } from "react-helmet-async";
 //import { useAuth } from '../context/AuthContext'
@@ -69,7 +70,7 @@ function Design() {
       </section>
 
       <section className="section " id="experiencia" data-aos="fade-up">
-        <img src={Pattern} alt="tran" className="pattern" />
+        <img src={Pattern} alt="tran" className="pattern" data-aos="fade-up" />
         <div className="contenedor text-left">
 
           <h2>Mis servicios</h2>
@@ -120,9 +121,10 @@ function Design() {
       {/* About */}
       <br />
       <span id="sobremi" />
+      <img src={Pattern3} alt="tran" className="pattern3" data-aos="fade-up" />
       <section className="about  mb-5" data-aos="fade-up">
         <div className=" d-flex container about-container">
-          <div className="col  text-left"><img src={Me} alt="tran" style={{ filter: `blur(2px)`, borderRadius: '400px', maxWidth: '370px', margin: '16px', boxSizing: 'border-box', backgroundColor: '#101835' }} /></div>
+          <div className="col  img-left"><img src={Me} alt="tran" style={{ filter: `blur(1px)`, borderRadius: '400px', maxWidth: '300px', margin: '16px', boxSizing: 'border-box', backgroundColor: '#101835' }} /></div>
           <div className="col text-left  ">
             <small>Mucho gusto</small>
             <br />

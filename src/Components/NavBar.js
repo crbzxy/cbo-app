@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ExternalLink } from "react-external-link";
 import * as FaIcons from "react-icons/fa";
 import Logo from '../logo.svg';
@@ -8,12 +8,21 @@ import Logo from '../logo.svg';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-
+  const location = useLocation();
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  const [navBg, setNavBg] = React.useState("block");
+
+
   useEffect(() => {
     navegador();
-  });
+    if (window.location.pathname === "/contacto") {
+      setNavBg("none");
+    } else {
+      setNavBg('block')
+    }
+  }, [location]);
+
   const navegador = () => {
     var navScr = document.getElementById("navScr");
     window.onscroll = function () {
@@ -41,10 +50,10 @@ function Navbar() {
         <span>  </span>
       </Link>
       <ul className={click ? "navbar_menu active " : "navbar_menu"}>
-        <a href="#portafolio" className="navbar_menu_link" onClick={closeMobileMenu}>
+        <a href="#portafolio" style={{ display: navBg }} className="navbar_menu_link m-h" onClick={closeMobileMenu}>
           <li> Portafolio </li> {/* {dropdown && <Dropdown />} */}
         </a>
-        <a href="#sobremi" className="navbar_menu_link" onClick={closeMobileMenu}>
+        <a href="#sobremi" className="navbar_menu_link m-h" style={{ display: navBg }} onClick={closeMobileMenu}>
           <li> Sobre mí </li>
         </a>
 
