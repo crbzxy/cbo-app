@@ -218,7 +218,7 @@ small {
   height: auto;
   flex-flow: column;
   display: flex;
-  padding-top: 2rem;
+  padding-top: 10vh;
 
   .contenedor h2 {
     margin: 1rem 0px !important;
@@ -416,6 +416,37 @@ form {
   }
 }
 
+.pattern2 {
+  position: relative;
+  max-width: 280px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+left: 3vh;
+  top: 297vh;
+  z-index: -5;
+  @include phone{
+    max-width: 150px;
+  }
+}
+
+.pattern3 {
+  position: relative;
+  max-width: 150px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+right: 3vh;
+  top:370vh;
+  z-index: -5;
+  opacity: 0.7;
+  @include phone{
+    max-width: 150px;
+  }
+}
+
+
+
 my-masonry-grid {
   display: -webkit-box;
 
@@ -445,7 +476,7 @@ my-masonry-grid {
 
 
 .about{
-  margin-top:15vh !important;
+  margin-top:20vh !important;
   ul{text-align: left !important;}
 }
 
@@ -462,3 +493,42 @@ my-masonry-grid {
   justify-content: space-between;
   list-style: none;
 }
+
+.contacto{
+  height:auto;
+  display: flex !important;
+  flex-flow: row ;
+  
+  .col-img{
+    flex: 1;
+  }
+@include tablet{
+  flex-flow: column;
+}
+}
+.contact-form{
+  input{
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 0.5rem;
+  }
+  button{margin-left:0px;}
+  @include tablet{
+    align-items: center;
+  }
+}
+
+.about-container{
+  @include tablet{
+    flex-flow: column !important;
+  }
+}
+
+p.position{
+text-align: center !important;
+color: rgb(33, 30, 51);
+margin:auto;
+}
+
+
+

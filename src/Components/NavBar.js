@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ExternalLink } from "react-external-link";
 import * as FaIcons from "react-icons/fa";
 import Logo from '../logo.svg';
@@ -8,12 +8,31 @@ import Logo from '../logo.svg';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-
+  const location = useLocation();
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  const [navBg, setNavBg] = useState("block");
+  const [homePage, setHomePage] = useState("block")
+
   useEffect(() => {
     navegador();
-  });
+
+
+    if (window.location.pathname === "/contacto") {
+      setNavBg("none");
+    } else {
+      setNavBg('none')
+    }
+
+    if (window.location.pathname === "/design") {
+      setNavBg('block')
+      setHomePage("none")
+    } else {
+
+      setHomePage("block")
+    }
+  }, [location]);
+
   const navegador = () => {
     var navScr = document.getElementById("navScr");
     window.onscroll = function () {
@@ -41,18 +60,27 @@ function Navbar() {
         <span>  </span>
       </Link>
       <ul className={click ? "navbar_menu active " : "navbar_menu"}>
-        <Link to="/work" className="navbar_menu_link" onClick={closeMobileMenu}>
+        <Link
+          to="/design"
+          style={{ display: homePage }}
+          className="navbar_menu_button navbar_menu_link"
+          onClick={closeMobileMenu}
+        >
+          <li> <FaIcons.FaHome /> </li>
+        </Link>
+        <a href="/design#portafolio" style={{ display: navBg }} className="navbar_menu_link m-h" onClick={closeMobileMenu}>
           <li> Portafolio </li> {/* {dropdown && <Dropdown />} */}
-        </Link>
-        <Link to="/about" className="navbar_menu_link" onClick={closeMobileMenu}>
+        </a>
+        <a href="#sobremi" className="navbar_menu_link m-h" style={{ display: navBg }} onClick={closeMobileMenu}>
           <li> Sobre mí </li>
-        </Link>
+        </a>
 
 
-        <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO.pdf?alt=media&token=1bf21c9a-0e5a-418e-a167-c2555bdd58a6" download>CV </a>
+        <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO-ESP.pdf?alt=media&token=9e7323eb-9571-45f8-b701-b306ad3ba1a8" download>CV </a>
+
 
         <Link
-          to="/contact"
+          to="/contacto"
           className="navbar_menu_button navbar_menu_link"
           onClick={closeMobileMenu}
         >

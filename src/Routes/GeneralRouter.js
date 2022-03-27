@@ -17,11 +17,15 @@ import ShipGuru from '../Views/proyects/ShipGuru'
 import Adsu from '../Views/proyects/Adsu'
 import Canalla from '../Views/proyects/Canalla'
 import GoPharma from '../Views/proyects/GoPharma'
+import ScrollToTop from '../Components/ScrollToTop'
+import Contacto from '../Views/Contacto'
+
 function GeneralRouter() {
   return (
     <>
 
       <BrowserRouter>
+        <ScrollToTop />
         <AuthProvider>
           <Routes>
             <Route path="/" element={<Start />} />
@@ -30,10 +34,12 @@ function GeneralRouter() {
             <Route path='/login' element={<Login />} />
             <Route path='/arte' element={<Arte />} />
             <Route path='/registro' element={<Register />} />
-            <Route path='/cv' element={<ProtectedRoute>
-
-              <Cv />
-            </ProtectedRoute>} />
+            <Route path='/cv' element={
+              <ProtectedRoute>
+                <Cv />
+              </ProtectedRoute>}
+            />
+            <Route path='/contacto' element={<Contacto />} />
             <Route path='/oportunos' element={<Oportunos />} />
             <Route path='/galeria-union' element={<GaleriaUnion />} />
             <Route path='/lapi' element={<Lapi />} />

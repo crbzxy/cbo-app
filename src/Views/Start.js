@@ -4,6 +4,7 @@ import logo from "../logo.svg";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useAuth } from "../context/AuthContext";
+import { Helmet } from "react-helmet-async";
 function Start() {
   useEffect(() => {
     AOS.init({
@@ -34,12 +35,17 @@ function Start() {
     );
   return (
     <>
+      <Helmet>
+        <title>Carlos Boyzo Oregón</title>
+        <link rel="canonical" href="https://www.carlosboyzo.com/" />
+      </Helmet>
       <section className="App-header" >
         <div className="contenedor">
           {user && <small>Hola {user.email}</small>}
           <div className="card">
             <img src={logo} className="logo" alt="Carlos Boyzo Oregón" />
-            <h1>UX-UI DEV ART</h1>
+            <h1>Carlos Boyzo Oregón</h1>
+            <p className="position" >UX-UI-IXD DEV WEB ARTIST</p>
 
             <p className="frase">
               <q>
