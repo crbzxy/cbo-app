@@ -12,9 +12,10 @@ function Contacto() {
   const [message, setMessage] = useState("");
 
   const handleSend = async (e) => {
+    e.preventDefault();
     setSent(true);
     try {
-      await axios.post("https://contact.carlosboyzo.com/send_mail", {
+      await axios.post("http://localhost:4000/send_mail", {
         name,
         email,
         subject,
@@ -25,9 +26,6 @@ function Contacto() {
       console.error(error);
     }
   };
-
-
-
 
   return (
     <>
@@ -89,7 +87,7 @@ function Contacto() {
             ) : (
               <section>
                 <div className="contenedor">
-                  <h1> ✨ Email Sent</h1>
+                  <h1> ✨ Gracias por tu mensaje, respondere lo más pronto posible</h1>
                   <Link className="btn-primario" to="/">
                     {" "}
                     Regresar al inicio
