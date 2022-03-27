@@ -9,19 +9,7 @@ function Manifiesto() {
 
         México D. F., 1976
       </h2>
-      <img
-        alt="Roberto Bolaño"
-        border={0}
-        id="BLOGGER_PHOTO_ID_5096092403717269826"
-        src="https://imagenes.elpais.com/resizer/_wsSRYdferLMt7IS79fothEwHS4=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/G3LN3SQVA5CPDICLV7FUPCAAK4.jpg"
-        style={{
-          display: "block",
-          margin: "0px auto 10px",
-          cursor: "hand",
-          textAlign: "center",
-          maxWidth: '400px'
-        }}
-      />
+
       <div>
 
         <p>“Hasta los confines del sistema solar hay cuatro horas-luz; hasta la estrella más cercana, cuatro años-luz. Un desmedido océano de vacío. Pero ¿estamos realmente seguros de que sólo haya un vacío? Únicamente sabemos que en este espacio no hay estrellas luminosas; de existir, ¿serían visibles? ¿Y si existiesen cuerpos no luminosos, u oscuros? ¿No podría suceder en los mapas celestes, al igual que en los de la tierra, que estén indicadas las estrellas-ciudades y omitidas las estrellas-pueblos?”.</p>

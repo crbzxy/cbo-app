@@ -11,15 +11,25 @@ function Navbar() {
   const location = useLocation();
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  const [navBg, setNavBg] = React.useState("block");
-
+  const [navBg, setNavBg] = useState("block");
+  const [homePage, setHomePage] = useState("block")
 
   useEffect(() => {
     navegador();
+
+
     if (window.location.pathname === "/contacto") {
       setNavBg("none");
     } else {
+      setNavBg('none')
+    }
+
+    if (window.location.pathname === "/design") {
       setNavBg('block')
+      setHomePage("none")
+    } else {
+
+      setHomePage("block")
     }
   }, [location]);
 
@@ -50,7 +60,15 @@ function Navbar() {
         <span>  </span>
       </Link>
       <ul className={click ? "navbar_menu active " : "navbar_menu"}>
-        <a href="#portafolio" style={{ display: navBg }} className="navbar_menu_link m-h" onClick={closeMobileMenu}>
+        <Link
+          to="/design"
+          style={{ display: homePage }}
+          className="navbar_menu_button navbar_menu_link"
+          onClick={closeMobileMenu}
+        >
+          <li> <FaIcons.FaHome /> </li>
+        </Link>
+        <a href="/design#portafolio" style={{ display: navBg }} className="navbar_menu_link m-h" onClick={closeMobileMenu}>
           <li> Portafolio </li> {/* {dropdown && <Dropdown />} */}
         </a>
         <a href="#sobremi" className="navbar_menu_link m-h" style={{ display: navBg }} onClick={closeMobileMenu}>
@@ -59,6 +77,7 @@ function Navbar() {
 
 
         <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO-ESP.pdf?alt=media&token=9e7323eb-9571-45f8-b701-b306ad3ba1a8" download>CV </a>
+
 
         <Link
           to="/contacto"
