@@ -15,7 +15,9 @@ function Contacto() {
     e.preventDefault();
     setSent(true);
     try {
-      await axios.post("http://localhost:4000/send_mail", {
+      //https://contact.carlosboyzo.com/send_mail
+      //http://localhost:4000/send_mail
+      await axios.post("https://contact.carlosboyzo.com/send_mail", {
         name,
         email,
         subject,
