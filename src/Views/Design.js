@@ -13,7 +13,7 @@ import Pattern3 from "../img/pattern3.png"
 import Portfolio from "../Components/Portfolio";
 import { Helmet } from "react-helmet-async";
 //import { useAuth } from '../context/AuthContext'
-
+import Footer from "../Components/Footer";
 
 function Design() {
 
@@ -143,30 +143,15 @@ function Design() {
               <li>Experiencia como como lider en equipos</li>
             </ul>
             <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO-ESP.pdf?alt=media&token=9e7323eb-9571-45f8-b701-b306ad3ba1a8" download className="btn-primario"> Descarga mi CV </a>
-            <p>Sigueme en mis redes sociales</p>
-            <ul className="redes">
-              <ExternalLink href="https://www.instagram.com/perrodimensional/">
-                <li>
-                  <FaIcons.FaInstagram />
-                </li>
-              </ExternalLink>
-              <ExternalLink href="https://github.com/crbzxy">
-                <li>
-                  <FaIcons.FaGithub />
-                </li>
-              </ExternalLink>
-              <ExternalLink href="https://www.linkedin.com/in/carlosboyzo/">
-                <li>
-                  <FaIcons.FaLinkedin />
-                </li>
-              </ExternalLink>
-            </ul>
+
+
 
           </div>
         </div>
       </section>
 
       <Colaboradores />
+      <Footer />
     </>
   );
 }

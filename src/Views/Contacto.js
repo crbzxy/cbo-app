@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Helmet } from "react-helmet-async";
 import Navbar from "../Components/NavBar";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
+
 function Contacto() {
   const [sent, setSent] = useState(false);
   const [email, setEmail] = useState("");
@@ -28,7 +33,18 @@ function Contacto() {
       console.error(error);
     }
   };
-
+  useEffect(() => {
+    AOS.init({
+      offset: 120,
+      delay: 20,
+      duration: 500,
+      easing: "ease-in-out",
+      debounceDelay: 50,
+      throttleDelay: 99,
+      mirror: false,
+      anchorPlacement: "bottom-top",
+    });
+  }, []);
   return (
     <>
       <Helmet>
@@ -36,7 +52,7 @@ function Contacto() {
         <link rel="canonical" href="https://carlosboyzo.com/contacto" />
       </Helmet>
       <Navbar />
-      <div className="section">
+      <div className="section" data-aos="fade-in">
         <div className="contenedor contacto">
           <div className="col-img">
             <img src="/" alt="hola" />
