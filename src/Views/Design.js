@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { ExternalLink } from "react-external-link";
 import { Link } from "react-router-dom";
-import * as FaIcons from "react-icons/fa";
+//import * as FaIcons from "react-icons/fa";
 import NavBar from "../Components/NavBar";
 import Me from "../img/me-moshed.gif";
 import AOS from "aos";

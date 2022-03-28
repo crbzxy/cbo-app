@@ -46,7 +46,14 @@ function Start() {
             <img src={logo} className="logo" alt="Carlos Boyzo Oregón" />
             <h1>Carlos Boyzo Oregón</h1>
             <p className="position" >UX-UI DEV ART🔥</p>
-
+            <div className="contenedor-botones">
+              <Link to="/arte" className="btn-primario">
+                Arte
+              </Link>
+              <Link to="/design" className="btn-primario">
+                Diseño
+              </Link>
+            </div>
             <p className="frase">
               <q>
                 La verdadera imaginación es aquella que dinamita, elucida,
@@ -57,17 +64,10 @@ function Start() {
             </p>
 
             <small>
-              Déjenlo todo, nuevamente by Roberto Bolaño México D. F. - 1976
+              Déjenlo todo, nuevamente by <strong>Roberto Bolaño </strong> México D. F. - 1976
             </small>
+            <br />
 
-            <div className="contenedor-botones">
-              <Link to="/arte" className="btn-primario">
-                Arte
-              </Link>
-              <Link to="/design" className="btn-primario">
-                Diseño
-              </Link>
-            </div>
             {user && (
               <button className="btn-primario" onClick={handleLogout}>
                 Cerrar sesión
