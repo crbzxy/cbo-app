@@ -4,7 +4,7 @@ import './scss/App.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import GeneralRouter from './Routes/GeneralRouter';
-
+import { HelmetProvider } from "react-helmet-async";
 
 
 function App() {
@@ -20,9 +20,9 @@ function App() {
   return (
     <>
       <div className="App">
-
-        <GeneralRouter />
-
+        <HelmetProvider>
+          <GeneralRouter />
+        </HelmetProvider>
       </div>
       <small className="copyright">
         © {year} Desarrollado con  🖤  por <a className='ml' href="/"> Carlos Boyzo Oregón</a> 🔥
