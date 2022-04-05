@@ -1,16 +1,17 @@
-$color1:#646464;
+$color1: #646464;
 @import "./libs/mixins";
 @import "./libs/variables";
-@import './libs/type';
+@import "./libs/type";
 
 html {
   scroll-behavior: smooth;
 }
 
 .App {
- 
-text-align: center;
-  p { text-align: left !important;}
+  text-align: center;
+  p {
+    text-align: left !important;
+  }
 }
 
 .App-logo {
@@ -25,10 +26,50 @@ text-align: center;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #0C0920;
+  color: #0c0920;
   background-color: #02000f;
 }
 
+.App-header-proyecto {
+  margin-top: 10vh;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #0c0920;
+  background-color: #02000f;
+}
+.proyecto-contenedor {
+  margin-top: 5vh;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(6px + 2vmin);
+  color: #0c0920;
+  background-color: #ebebeb;
+  max-width: 1080px;
+  min-height: 60vh !important;
+
+  h2 {
+    margin: 1rem 0 !important;
+  }
+  .contenedor-badges {
+    position: relative;
+    display: center;
+    flex-flow: wrap;
+    padding: 1rem;
+    width: 100%;
+    .badge {
+      margin: 5px;
+    }
+  }
+}
 .App-link {
   color: $color1;
 }
@@ -63,4 +104,3 @@ a {
 .section {
   background-color: #878c911f;
 }
-

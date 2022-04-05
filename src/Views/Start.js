@@ -45,7 +45,7 @@ function Start() {
           <div className="card">
             <img src={logo} className="logo" alt="Carlos Boyzo Oregón" />
             <h1>Carlos Boyzo Oregón</h1>
-            <p className="position" >UX-UI DEV ART🔥</p>
+            <p className="position" >UX-UI DEV ART</p>
             <div className="contenedor-botones">
               <Link to="/arte" className="btn-primario">
                 Arte

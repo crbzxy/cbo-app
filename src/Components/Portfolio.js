@@ -7,12 +7,13 @@ import Pattern2 from "../img/pattern2.png";
 
 function Portfolio() {
   var proyectos = [
-    { id: 0, name: "Oportunos.mx", img: `${Foto}`, link: "/oportunos" },
+    { id: 0, name: "Oportunos.mx", img: `${Foto}`, link: "/oportunos", description: "Oportunos.mx es una plataforma que permite realizar búsquedas de  anuncios en el espacio público de interés para campañas de marketing en distintas áreas de la república mexicana.", },
     {
       id: 1,
       name: "Galería Unión",
       img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/Galeri%CC%81aUnion.png?alt=media&token=9ba9f9b1-c396-434b-9d2d-f063f73e228a`,
       link: "/galeria-union",
+      description: "Oportunos.mx es una plataforma que permite realizar búsquedas de puntos disponibles para anuncios en el espacio público de interés para campañas de comunicación en distintas áreas de la república mexicana.",
     },
     {
       id: 2,
@@ -45,8 +46,7 @@ function Portfolio() {
           <div className="description-work">
             <h3 className="titulo mt-5">{item.name}</h3>
             <p className="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Obcaecati, voluptatum!
+              {item.description}
             </p>
           </div>
         </div>

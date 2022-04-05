@@ -61,7 +61,7 @@ function Design() {
                 </ExternalLink>
               </p>
               <Link className="btn-primario" to="/contacto">
-                ✌🏼 Conversemos
+                ¡CONTÁCTAME!
               </Link>
             </div>
             <img className="hero-img" src={Me} alt="" />
