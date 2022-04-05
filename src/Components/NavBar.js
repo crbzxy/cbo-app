@@ -76,7 +76,7 @@ function Navbar() {
         </a>
 
 
-        <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO-ESP.pdf?alt=media&token=9e7323eb-9571-45f8-b701-b306ad3ba1a8" download>CV </a>
+        <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO-ESP.pdf?alt=media&token=7b241bf2-5867-40e3-9d79-772fd04d8c28" download>CV </a>
 
 
         <Link
