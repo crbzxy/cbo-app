@@ -5,6 +5,8 @@ import { ExternalLink } from "react-external-link";
 import * as FaIcons from "react-icons/fa";
 import AOS from "aos";
 
+import FooterImg2 from '../img/footer-img_1.png'
+
 
 import "aos/dist/aos.css";
 function Footer() {
@@ -23,6 +25,7 @@ function Footer() {
   return (
     <section className='section footer' data-aos="fade-up">
 
+      <img src={FooterImg2} data-aos="fade-up" className="footer-img2" alt="" />
       <footer className="container">
         <div className="row">
           <div className="col-md-12 footer-contact">

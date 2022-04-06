@@ -528,11 +528,13 @@ p.position {
   margin: auto;
 }
 .footer {
+  box-sizing: border-box;
+  overflow: hidden;
   margin-bottom: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 66vh;
+  min-height: 76vh;
   height: 100%;
   h5 {
     font-size: 38px !important;
@@ -566,7 +568,7 @@ p.position {
     margin: auto;
     padding: 1rem;
     text-align: left !important;
-    background-color: rgb(1, 7, 22);
+    background-color: rgba(1, 7, 22, 0.879);
     border-radius: 2rem;
     @include tablet {
       flex-flow: row;

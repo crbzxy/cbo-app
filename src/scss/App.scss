@@ -104,3 +104,16 @@ a {
 .section {
   background-color: #878c911f;
 }
+
+.footer-img2 {
+  width: 100%;
+  height: auto;
+  max-width: 1980px;
+  margin: auto;
+  position: absolute;
+  overflow: hidden;
+  z-index: -2;
+  opacity: 0.1;
+  filter: blur(60px);
+  transform: translatex(-50%) scalex(2);
+}
