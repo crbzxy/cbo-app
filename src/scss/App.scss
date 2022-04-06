@@ -57,6 +57,9 @@ html {
   background-color: #ebebeb;
   max-width: 1080px;
   min-height: 60vh !important;
+  img {
+    max-width: 1080px;
+  }
   p {
     text-align: justify !important;
   }

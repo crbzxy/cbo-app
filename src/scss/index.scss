@@ -287,8 +287,8 @@ small {
 .sociost {
   margin-top: 10vh;
   padding-top: 5vh;
-
-  min-height: 80vh !important;
+  height: auto !important;
+  min-height: 70vh !important;
   height: 100%;
 
   @include phone {

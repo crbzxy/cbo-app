@@ -1,12 +1,14 @@
 import React from 'react'
-
-
 import { useNavigate } from 'react-router-dom';
 import { FaArrowAltCircleLeft } from 'react-icons/fa';
 import { Helmet } from 'react-helmet-async'
 import Navbar from '../../Components/NavBar'
 import Manifiesto from '../Manifiesto'
 import Badge from 'react-bootstrap/Badge'
+import UserFlow from '../../img/oportunos-userflow.png'
+
+
+
 function Oportunos() {
   const navigate = useNavigate();
 
@@ -54,6 +56,10 @@ function Oportunos() {
           El proyecto se retomó con el objetivo de actualizar y agregar nuevas funcionalidades al producto digital anterior, buscando una ventaja competitiva, donde el reto principal fue mantener la identidad visual haciendo uso de nuevas tecnologías que permitieran una mejora  en la experiencia de los usuarios y alinear lógicas del negocio a la campaña digital.
 
         </p>
+        <h3>User flow</h3>
+        <img src={UserFlow} alt="User-Flow Oportunos.mx" />
+
+
 
       </div>
       <Manifiesto />
