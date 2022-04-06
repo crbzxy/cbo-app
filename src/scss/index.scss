@@ -171,7 +171,8 @@ small {
     width: 100%;
 
     @include phone {
-      max-width: 90%;
+      max-width: 60%;
+      margin: 2rem;
     }
   }
 }
@@ -218,7 +219,7 @@ small {
   flex-flow: column;
   display: flex;
   padding-top: 10vh;
-
+  position: relative;
   .contenedor h2 {
     margin: 1rem 0px !important;
     text-align: left !important;
@@ -518,6 +519,9 @@ my-masonry-grid {
 
 .about-container {
   @include tablet {
+    .img-left img {
+      max-width: 180px !important;
+    }
     flex-flow: column !important;
   }
 }
@@ -536,6 +540,7 @@ p.position {
   justify-content: center;
   min-height: 76vh;
   height: 100%;
+  width: 100%;
   h5 {
     font-size: 38px !important;
   }
@@ -564,14 +569,16 @@ p.position {
     width: 100%;
     max-width: 870px;
     height: 100%;
-    max-height: 100%;
+
+    max-height: 50vh;
     margin: auto;
     padding: 1rem;
     text-align: left !important;
     background-color: rgba(1, 7, 22, 0.879);
     border-radius: 2rem;
     @include tablet {
-      flex-flow: row;
+      flex-flow: column;
+      max-height: 70vh;
     }
     .row {
       width: 100%;
@@ -589,9 +596,16 @@ p.position {
         margin-right: auto !important;
       }
     }
+
     .LogoFooter {
       max-width: 120px;
-      left: 0px;
+      display: flex;
+      align-items: center;
+
+      @include tablet {
+        max-width: 100px;
+        margin: auto !important;
+      }
     }
     .rss {
       display: flex;
@@ -604,5 +618,18 @@ p.position {
   button.btn-primario {
     margin: 0px auto !important;
     text-align: center !important;
+  }
+}
+
+.logo-footer {
+  text-align: center !important;
+
+  img {
+    margin: 0 auto;
+  }
+  small {
+    padding: none !important;
+    margin: none !important;
+    color: #ffffff !important;
   }
 }

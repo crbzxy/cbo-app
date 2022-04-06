@@ -26,8 +26,8 @@ function Footer() {
     <section className='section footer' data-aos="fade-up">
 
       <img src={FooterImg2} data-aos="fade-up" className="footer-img2" alt="" />
-      <footer className="container">
-        <div className="row">
+      <footer className="container  ">
+        <div className="row  ">
           <div className="col-md-12 footer-contact">
 
             <h5>¿Tienes un proyecto? <br /> ¡Hablemos! </h5>
@@ -36,10 +36,11 @@ function Footer() {
           </div>
         </div>
 
-        <div className="row  ">
-          <div className="col-md-6">
+        <div className="row  justify-content-md-center ">
+          <div className="col-md-6 logo-footer">
 
             <img src={LogoFooter} className="LogoFooter" alt="Carlos Boyzo Oregón" />
+
 
 
           </div>

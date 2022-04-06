@@ -8,7 +8,9 @@ html {
 }
 
 .App {
+  position: relative;
   text-align: center;
+  height: 100vh;
   p {
     text-align: left !important;
   }
@@ -45,16 +47,19 @@ html {
   margin-top: 5vh;
   border-radius: 1rem;
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  font-size: calc(6px + 2vmin);
+  font-size: calc(5px + 2vmin);
   color: #0c0920;
   background-color: #ebebeb;
   max-width: 1080px;
   min-height: 60vh !important;
+  p {
+    text-align: justify !important;
+  }
 
   h2 {
     margin: 1rem 0 !important;
@@ -81,7 +86,7 @@ html {
   left: 0;
   padding: 1rem;
   text-align: center;
-  z-index: 4;
+  z-index: 0;
   font-size: 9px;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -89,9 +94,7 @@ html {
   justify-content: center;
 
   @include phone {
-    display: flex;
-    flex-flow: column;
-    position: relative;
+    display: none;
   }
 }
 
@@ -116,4 +119,32 @@ a {
   opacity: 0.1;
   filter: blur(60px);
   transform: translatex(-50%) scalex(2);
+}
+
+.portafolio-img {
+  max-width: 350px;
+  position: absolute;
+  bottom: -10%;
+  right: 10%;
+  z-index: -1;
+  @include phone {
+    bottom: -10%;
+    max-width: 200px;
+  }
+}
+
+.col-form {
+  padding: 1rem;
+}
+
+button.goback {
+  position: absolute;
+  left: 3%;
+  top: 2vh;
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 1px solid rgba(167, 192, 247, 0.615);
+  color: rgba(255, 255, 255, 0.852);
 }

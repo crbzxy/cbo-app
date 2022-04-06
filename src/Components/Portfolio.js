@@ -4,7 +4,7 @@ import Foto from "../img/oportunos.png";
 import Foto2 from "../img/girlonrgb.png";
 import { Link } from "react-router-dom";
 import Pattern2 from "../img/pattern2.png";
-
+import Dassets from "../img/3dassets.png";
 function Portfolio() {
   var proyectos = [
     { id: 0, name: "Oportunos.mx", img: `${Foto}`, link: "/oportunos", description: "Oportunos.mx es una plataforma que permite realizar búsquedas de  anuncios en el espacio público de interés para campañas de marketing en distintas áreas de la república mexicana.", },
@@ -85,6 +85,8 @@ function Portfolio() {
             </Masonry>
           </div>
         </div>
+        <img src={Dassets} className="portafolio-img" data-aos="fade-up" alt="Carlos Boyzo Oregòn" />
+
       </section>
     </>
   );
