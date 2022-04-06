@@ -5,11 +5,10 @@
 
 @import "./libs/mixins";
 @import "./libs/variables";
-@import './libs/type';
+@import "./libs/type";
 @import "./Components/Navbar";
 
 body {
- 
   overflow-x: hidden;
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -23,7 +22,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -31,7 +30,6 @@ code {
   max-width: 100px;
   padding: 1rem;
   box-sizing: border-box;
-
 }
 
 .contenedor,
@@ -75,7 +73,6 @@ code {
   }
 }
 
-
 .frase {
   text-align: justify;
   font-size: 0.8rem;
@@ -110,7 +107,7 @@ small {
   border: none;
   outline: none;
   margin: 15px;
-  transition: all .3s cubic-bezier(.25, .8, .25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   font-size: 0.6em;
   font-weight: 700;
   text-transform: uppercase;
@@ -121,16 +118,21 @@ small {
     transition: all 0.2s ease-in-out;
     background-color: black;
     color: white;
-    box-shadow: 0 10px 20px rgba(137, 182, 241, 0.445), 0 6px 6px rgba(196, 133, 247, 0.582);
+    box-shadow: 0 10px 20px rgba(137, 182, 241, 0.445),
+      0 6px 6px rgba(196, 133, 247, 0.582);
   }
 }
 
 .hero {
-
   height: auto;
   width: 100%;
   display: flex;
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(21, 34, 59) 89%, rgba(17, 60, 109, 0.87) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(21, 34, 59) 89%,
+    rgba(17, 60, 109, 0.87) 100%
+  );
   padding: 2rem;
   color: white;
   border-radius: 1rem;
@@ -141,7 +143,6 @@ small {
   @include phone {
     margin-top: 5vh;
     flex-flow: column;
-
   }
 
   .texto {
@@ -152,12 +153,11 @@ small {
 
     @include phone {
       width: 89%;
-
     }
 
     p {
       margin-top: 10px;
-      font-size: 16px
+      font-size: 16px;
     }
   }
 
@@ -171,17 +171,15 @@ small {
     width: 100%;
 
     @include phone {
-      max-width: 90%;
-
+      max-width: 60%;
+      margin: 2rem;
     }
   }
 }
 
 #experiencia {
-
   display: flex;
   text-align: left;
-
 
   .contenedor-experiencia {
     display: grid;
@@ -204,13 +202,15 @@ small {
       background-color: white;
       border-radius: 2rem;
       padding: 1rem;
-      
-      box-shadow: 0 10px 20px rgba(150, 75, 180, 0.103), 0 6px 6px rgba(61, 108, 211, 0.137);
+
+      box-shadow: 0 10px 20px rgba(150, 75, 180, 0.103),
+        0 6px 6px rgba(61, 108, 211, 0.137);
       &:hover {
-        box-shadow: 0 10px 20px rgba(75, 180, 140, 0.19), 0 6px 6px rgba(61, 109, 211, 0.23);
+        box-shadow: 0 10px 20px rgba(75, 180, 140, 0.19),
+          0 6px 6px rgba(61, 109, 211, 0.23);
       }
     }
-  } 
+  }
 }
 
 .portafolio {
@@ -218,13 +218,12 @@ small {
   height: auto;
   flex-flow: column;
   display: flex;
-  padding-top: 2rem;
-
+  padding-top: 10vh;
+  position: relative;
   .contenedor h2 {
     margin: 1rem 0px !important;
     text-align: left !important;
   }
-
 
   .contenedor-portafolio {
     display: grid;
@@ -240,7 +239,6 @@ small {
       grid-template-columns: repeat(1, 1fr);
     }
 
-
     .card-portafolio-el {
       border: 1px solid rgba(131, 149, 184, 0.11);
       background-color: rgb(243, 243, 243);
@@ -248,11 +246,11 @@ small {
       box-sizing: border-box;
       padding: 1rem;
       margin-bottom: 1.3rem;
-      box-shadow: 0 10px 20px rgba(150, 75, 180, 0.103), 0 6px 6px rgba(61, 108, 211, 0.137);
+      box-shadow: 0 10px 20px rgba(150, 75, 180, 0.103),
+        0 6px 6px rgba(61, 108, 211, 0.137);
       img {
         width: 100%;
         margin: 0 auto;
-
       }
 
       .description-work {
@@ -264,7 +262,8 @@ small {
         transition: all 0.2s ease-in-out;
         background-color: black;
         color: white;
-        box-shadow: 0 10px 20px rgba(137, 182, 241, 0.445), 0 6px 6px rgba(196, 133, 247, 0.582);
+        box-shadow: 0 10px 20px rgba(137, 182, 241, 0.445),
+          0 6px 6px rgba(196, 133, 247, 0.582);
       }
     }
   }
@@ -277,7 +276,6 @@ small {
   justify-content: center;
   padding-top: 6.6vmax;
 
-
   height: auto !important;
   min-height: 80vh !important;
 
@@ -287,7 +285,6 @@ small {
 }
 
 .sociost {
-
   margin-top: 10vh;
   padding-top: 5vh;
 
@@ -345,8 +342,6 @@ small {
   max-height: 80px !important;
   margin-bottom: 1rem;
 
-
-
   &:hover {
     img {
       transform: scale(1.2);
@@ -360,7 +355,6 @@ small {
     max-width: 180px !important;
     max-height: 80px !important;
   }
-
 }
 
 .slick-prev {
@@ -388,8 +382,6 @@ form {
   height: 40px !important;
 }
 
-
-
 .circle-blue {
   max-width: 280px;
   width: 100%;
@@ -398,7 +390,7 @@ form {
   left: 3vh;
   top: 65vh;
   z-index: -5;
-  @include phone{
+  @include phone {
     max-width: 150px;
   }
 }
@@ -411,7 +403,36 @@ form {
   right: 3vh;
   top: 77vh;
   z-index: -5;
-  @include phone{
+  @include phone {
+    max-width: 150px;
+  }
+}
+
+.pattern2 {
+  position: relative;
+  max-width: 280px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 3vh;
+  top: 297vh;
+  z-index: -5;
+  @include phone {
+    max-width: 150px;
+  }
+}
+
+.pattern3 {
+  position: relative;
+  max-width: 150px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  right: 3vh;
+  top: 370vh;
+  z-index: -5;
+  opacity: 0.7;
+  @include phone {
     max-width: 150px;
   }
 }
@@ -431,34 +452,184 @@ my-masonry-grid {
 }
 
 .my-masonry-grid_column {
-
   width: 100% !important;
   /* gutter size */
   background-clip: padding-box;
 
-  >div {
+  > div {
     /* change div to reference your elements you put in <Masonry> */
     background: grey;
     margin-bottom: 30px;
   }
 }
 
-
-.about{
-  margin-top:15vh !important;
-  ul{text-align: left !important;}
+.about {
+  margin-top: 20vh !important;
+  ul {
+    text-align: left !important;
+  }
 }
 
-.text-left{
+.text-left {
   text-align: left !important;
 }
 
-.redes{
+.redes {
   display: flex !important;
   flex-flow: row;
   width: 100%;
   max-width: 100px;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: space-between;
   list-style: none;
+}
+
+.contacto {
+  height: auto;
+  display: flex !important;
+  flex-flow: row;
+
+  .col-img {
+    flex: 1;
+  }
+  @include tablet {
+    flex-flow: column;
+  }
+}
+.contact-form {
+  input {
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 0.5rem;
+    padding: 0.4rem;
+  }
+  textarea {
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 0.5rem;
+    padding: 0.4rem;
+  }
+  button {
+    margin-left: 0px;
+  }
+  @include tablet {
+    align-items: center;
+  }
+}
+
+.about-container {
+  @include tablet {
+    .img-left img {
+      max-width: 180px !important;
+    }
+    flex-flow: column !important;
+  }
+}
+
+p.position {
+  text-align: center !important;
+  color: rgb(33, 30, 51);
+  margin: auto;
+}
+.footer {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 76vh;
+  height: 100%;
+  width: 100%;
+  h5 {
+    font-size: 38px !important;
+  }
+
+  .rss-footer {
+    list-style: none;
+
+    li {
+      font-size: 1rem;
+      svg {
+        max-height: 16px;
+      }
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+  ul a {
+    color: rgb(255, 255, 255);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column;
+    width: 100%;
+    max-width: 870px;
+    height: 100%;
+
+    max-height: 50vh;
+    margin: auto;
+    padding: 1rem;
+    text-align: left !important;
+    background-color: rgba(1, 7, 22, 0.879);
+    border-radius: 2rem;
+    @include tablet {
+      flex-flow: column;
+      max-height: 70vh;
+    }
+    .row {
+      width: 100%;
+    }
+    .footer-contact {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      h5 {
+        text-align: center;
+      }
+      .btn-primario {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+    }
+
+    .LogoFooter {
+      max-width: 120px;
+      display: flex;
+      align-items: center;
+
+      @include tablet {
+        max-width: 100px;
+        margin: auto !important;
+      }
+    }
+    .rss {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: space-evenly;
+      color: #ffffff;
+    }
+  }
+  button.btn-primario {
+    margin: 0px auto !important;
+    text-align: center !important;
+  }
+}
+
+.logo-footer {
+  text-align: center !important;
+
+  img {
+    margin: 0 auto;
+  }
+  small {
+    padding: none !important;
+    margin: none !important;
+    color: #ffffff !important;
+  }
 }

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './scss/App.scss';
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './scss/App.scss';
 import GeneralRouter from './Routes/GeneralRouter';
-
+import { HelmetProvider } from "react-helmet-async";
 
 
 function App() {
@@ -15,12 +16,14 @@ function App() {
   useEffect(() => {
     getYear();
   }, [])
+
+
   return (
     <>
       <div className="App">
-
-        <GeneralRouter />
-
+        <HelmetProvider>
+          <GeneralRouter />
+        </HelmetProvider>
       </div>
       <small className="copyright">
         © {year} Desarrollado con  🖤  por <a className='ml' href="/"> Carlos Boyzo Oregón</a> 🔥

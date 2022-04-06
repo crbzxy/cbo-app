@@ -1,0 +1,14 @@
+### post
+POST https://contact.carlosboyzo.com/send_mail
+
+{
+    "name":"carlos", 
+    "email":"carlos@gmail.com",
+    "subject":"Hello",
+    "phone":"123", 
+    "message":"Hello"
+}
+
+
+### post
+GET https://contact.carlosboyzo.com/

@@ -1,16 +1,19 @@
-$color1:#646464;
+$color1: #646464;
 @import "./libs/mixins";
 @import "./libs/variables";
-@import './libs/type';
+@import "./libs/type";
 
 html {
   scroll-behavior: smooth;
 }
 
 .App {
- 
-text-align: center;
-  p { text-align: left !important;}
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  p {
+    text-align: left !important;
+  }
 }
 
 .App-logo {
@@ -19,16 +22,59 @@ text-align: center;
 }
 
 .App-header {
-  min-height: 52vh;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #0C0920;
+  color: #0c0920;
   background-color: #02000f;
 }
 
+.App-header-proyecto {
+  margin-top: 10vh;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #0c0920;
+  background-color: #02000f;
+}
+.proyecto-contenedor {
+  margin-top: 5vh;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: #0c0920;
+  background-color: #ebebeb;
+  max-width: 1080px;
+  min-height: 60vh !important;
+  p {
+    text-align: justify !important;
+  }
+
+  h2 {
+    margin: 1rem 0 !important;
+  }
+  .contenedor-badges {
+    position: relative;
+    display: center;
+    flex-flow: wrap;
+    padding: 1rem;
+    width: 100%;
+    .badge {
+      margin: 5px;
+    }
+  }
+}
 .App-link {
   color: $color1;
 }
@@ -40,7 +86,7 @@ text-align: center;
   left: 0;
   padding: 1rem;
   text-align: center;
-  z-index: 4;
+  z-index: 0;
   font-size: 9px;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -48,9 +94,7 @@ text-align: center;
   justify-content: center;
 
   @include phone {
-    display: flex;
-    flex-flow: column;
-    position: relative;
+    display: none;
   }
 }
 
@@ -64,3 +108,43 @@ a {
   background-color: #878c911f;
 }
 
+.footer-img2 {
+  width: 100%;
+  height: auto;
+  max-width: 1980px;
+  margin: auto;
+  position: absolute;
+  overflow: hidden;
+  z-index: -2;
+  opacity: 0.1;
+  filter: blur(60px);
+  transform: translatex(-50%) scalex(2);
+}
+
+.portafolio-img {
+  max-width: 350px;
+  position: absolute;
+  bottom: -10%;
+  right: 10%;
+  z-index: -1;
+  @include phone {
+    bottom: -10%;
+    max-width: 200px;
+  }
+}
+
+.col-form {
+  padding: 1rem;
+}
+
+button.goback {
+  position: absolute;
+  left: 3%;
+  top: 2vh;
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 1px solid rgba(167, 192, 247, 0.615);
+  color: rgba(255, 255, 255, 0.852);
+}
