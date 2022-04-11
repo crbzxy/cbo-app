@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import logo from "../logo.svg";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -47,12 +47,9 @@ function Start() {
             <h1>Carlos Boyzo Oregón</h1>
             <p className="position" >UX-UI DEV ART</p>
             <div className="contenedor-botones">
-              <Link to="/arte" className="btn-primario">
-                Arte
-              </Link>
-              <Link to="/design" className="btn-primario">
-                Diseño
-              </Link>
+
+              <a className="btn-primario" href="https://www.instagram.com/perrodimensional/">Instagram</a>
+              <a className="btn-primario" href="https://www.linkedin.com/in/carlosboyzo/">Linkedin</a>
             </div>
             <p className="frase">
               <q>
