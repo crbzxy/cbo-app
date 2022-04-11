@@ -10,7 +10,7 @@ html {
 .App {
   position: relative;
   text-align: center;
-  height: 100vh;
+  height: auto;
   p {
     text-align: left !important;
   }
@@ -126,7 +126,7 @@ a {
 }
 
 .portafolio-img {
-  max-width: 350px;
+  max-width: 250px;
   position: absolute;
   bottom: -10%;
   right: 10%;
@@ -137,8 +137,32 @@ a {
   }
 }
 
+.portafolio-img-start {
+  max-width: 180px;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  z-index: -1;
+  @include phone {
+    bottom: -10%;
+    max-width: 120px;
+  }
+}
+
 .col-form {
   padding: 1rem;
+}
+
+.conten-logo {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 5;
+  background-color: white;
+  padding: 1rem;
+  box-sizing: content-box;
+  border-radius: 12px;
+  max-width: 50px;
 }
 
 button.goback {
@@ -149,6 +173,39 @@ button.goback {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   background-color: transparent;
-  border: 1px solid rgba(167, 192, 247, 0.615);
-  color: rgba(255, 255, 255, 0.852);
+  border: 1px solid rgba(255, 255, 255, 0.896);
+  color: rgba(146, 156, 182, 0.852);
+}
+
+.about-start {
+  flex-flow: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  height: 100%;
+  min-height: 100vh;
+  color: rgb(39, 44, 49);
+  background: linear-gradient(
+      217deg,
+      rgba(253, 152, 152, 0.188),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(
+      127deg,
+      rgba(179, 254, 179, 0.288),
+      rgba(0, 255, 0, 0) 70.71%
+    ),
+    linear-gradient(
+      336deg,
+      rgba(106, 106, 246, 0.162),
+      rgba(0, 0, 255, 0) 70.71%
+    );
+}
+
+hr {
+  margin: auto;
+  max-width: 170px;
+  border: 1px solid rgba(93, 87, 87, 0.896);
 }
