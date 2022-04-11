@@ -19,6 +19,7 @@ import Canalla from "../Views/proyects/Canalla";
 import GoPharma from "../Views/proyects/GoPharma";
 import ScrollToTop from "../Components/ScrollToTop";
 import Contacto from "../Views/Contacto";
+import TiendaEnlinea from "../Views/proyects/TiendaEnlinea";
 
 function GeneralRouter() {
   return (
@@ -53,6 +54,7 @@ function GeneralRouter() {
             <Route path="/adsu" element={<Adsu />} />
             <Route path="/canalla-neza" element={<Canalla />} />
             <Route path="/go-pharma" element={<GoPharma />} />
+            <Route path="/tienda-en-linea" element={<TiendaEnlinea />} />
           </Routes>
         </AuthProvider>
 

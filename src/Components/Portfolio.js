@@ -13,13 +13,14 @@ function Portfolio() {
       name: "Galería Unión",
       img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/Galeri%CC%81aUnion.png?alt=media&token=9ba9f9b1-c396-434b-9d2d-f063f73e228a`,
       link: "/galeria-union",
-      description: "Oportunos.mx es una plataforma que permite realizar búsquedas de puntos disponibles para anuncios en el espacio público de interés para campañas de comunicación en distintas áreas de la república mexicana.",
+      description: "Galería Unión es un proyecto independiente creado recientemente en la Ciudad de México, trabajamos como plataforma de difusión y venta de arte contemporáneo.",
     },
     {
       id: 2,
       name: "Lapi",
       img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/all-devices-black.png?alt=media&token=2a1e7877-02d2-4170-b9b7-7cd98300bea1`,
       link: "/lapi",
+      description: "Lapi, rediseño y desarrollo ui-ux de una plataforma de gestión de inventarios para una empresa de servicios de salud.",
     },
     { id: 3, name: "Ecoglobe", img: `${Foto2}`, link: "/ecoglobe" },
     {
@@ -27,15 +28,12 @@ function Portfolio() {
       name: "Ship Guru",
       img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/shipguru.png?alt=media&token=cf9353ff-9231-43d5-a965-674e236941f5`,
       link: "/shipguru",
+      description: "Desarrollo de logo para Ship Gurú plataforma empresarial de paquetería y envíos en México. ",
     },
     { id: 5, name: "ADSU", img: `${Foto2}`, link: "/adsu" },
-    {
-      id: 6,
-      name: "Canalla Neza",
-      img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/Canalla.png?alt=media&token=278691b1-d8e8-47be-aa3b-a9255d6ffa59`,
-      link: "/canalla-neza",
-    },
-    { id: 7, name: "Go pharma", img: `${Foto2}`, link: "/go-pharma" },
+
+    { id: 6, name: "Go pharma", img: `${Foto2}`, link: "/go-pharma" },
+    { id: 7, name: "ADN Tienda en línea", img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/tiendaenlinea.png?alt=media&token=b2100705-f312-4021-a1ef-1a342cc0fd5a`, link: "/tienda-en-linea", description: "Landing page para registro de leads de la campaña (Tienda en línea de ADN Secciòn Amarilla)", },
   ];
 
   proyectos = proyectos.map(function (item) {
