@@ -45,21 +45,6 @@ function Start() {
         <title>Carlos Boyzo Oregón</title>
         <link rel="canonical" href="https://www.carlosboyzo.com/" />
       </Helmet>
-<<<<<<< HEAD
-      <section className="App-header" >
-        <div className="contenedor">
-          {user && <small>Hola {user.email}</small>}
-          <div className="card">
-            <img src={logo} className="logo" alt="Carlos Boyzo Oregón" />
-            <h1>Carlos Boyzo Oregón</h1>
-            <p className="position" >UX-UI DEV ART</p>
-            <div className="contenedor-botones">
-
-              <a className="btn-primario" href="https://www.instagram.com/perrodimensional/">Instagram</a>
-              <a className="btn-primario" href="https://www.linkedin.com/in/carlosboyzo/">Linkedin</a>
-            </div>
-            <p className="frase">
-=======
       <section className="about-start  pb-5" data-aos="fade-up">
         <div className="row">
           <div className=" container">
@@ -74,7 +59,6 @@ function Start() {
 
             <br />
             <p className="frase" style={{ TextAlign: "left", padding: '2rem' }}>
->>>>>>> main
               <q>
                 La verdadera imaginación es aquella que dinamita, elucida,
                 inyecta microbios esmeraldas en otras imaginaciones. En poesía y
