@@ -105,7 +105,7 @@ function Start() {
               <li>Desarrollador Web</li>
             </ul>
             <p>Sígueme en mis redes sociales</p>
-            <a href="https://hicetnunc.art/PerroDimensional/" download className="btn-primario"> HIC ET NUNC </a>
+            <a href="https://foundation.app/@perrodimensional" download className="btn-primario">foundation </a>
             <a href="https://www.instagram.com/perrodimensional/" download className="btn-primario"> Instagram </a>
             <a href="https://www.linkedin.com/in/carlosboyzo/" download className="btn-primario"> LinkedIn </a>
             <br />
