@@ -1,7 +1,7 @@
 import React from "react";
 import Masonry from "react-masonry-css";
 import Foto from "../img/oportunos.png";
-import Foto2 from "../img/girlonrgb.png";
+//import Foto2 from "../img/girlonrgb.png";
 import { Link } from "react-router-dom";
 import Pattern2 from "../img/pattern2.png";
 import Dassets from "../img/3dassets.png";
@@ -22,7 +22,7 @@ function Portfolio() {
       link: "/lapi",
       description: "Lapi, rediseño y desarrollo ui-ux de una plataforma de gestión de inventarios para una empresa de servicios de salud.",
     },
-    { id: 3, name: "Ecoglobe", img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/ecoglobe.png?alt=media&token=2bc4ebb4-e139-4b94-8f67-033abd3f13d8`, link: "/ecoglobe" },
+    { id: 3, name: "Ecoglobe", img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/ecoglobe.png?alt=media&token=2bc4ebb4-e139-4b94-8f67-033abd3f13d8`, link: "/ecoglobe", description: "Desarrollo de sitio web para la empresa Ecoglobe, empresa dedicada a la intalación de sistemas de energia solar en Tijuana, Baja California." },
     {
       id: 4,
       name: "Ship Guru",
@@ -30,9 +30,9 @@ function Portfolio() {
       link: "/shipguru",
       description: "Desarrollo de logo para Ship Gurú plataforma empresarial de paquetería y envíos en México. ",
     },
-    { id: 5, name: "ADSU", img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/adsu.png?alt=media&token=dbe410fb-656c-4585-ae8a-797a7ee4f8db`, link: "/adsu" },
+    { id: 5, name: "ADSU", img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/adsu.png?alt=media&token=dbe410fb-656c-4585-ae8a-797a7ee4f8db`, link: "/adsu", description: " Empresa con más de 40 años en el mercado especializada en soluciones de reparación y mantenimiento de línea blanca" },
 
-    { id: 6, name: "Go pharma", img: `${Foto2}`, link: "/go-pharma" },
+    { id: 6, name: "Go pharma", img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/go-pharma.png?alt=media&token=acc55d03-e19a-4329-870a-d5ece6057ecc`, link: "/go-pharma" },
     { id: 7, name: "ADN Tienda en línea", img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/tiendaenlinea.png?alt=media&token=b2100705-f312-4021-a1ef-1a342cc0fd5a`, link: "/tienda-en-linea", description: "Landing page para registro de leads de la campaña (Tienda en línea de ADN Secciòn Amarilla)", },
   ];
 
