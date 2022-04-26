@@ -469,32 +469,6 @@ form {
   }
 }
 
-my-masonry-grid {
-  display: -webkit-box;
-
-  /* Not needed if autoprefixing */
-  display: -ms-flexbox;
-
-  /* Not needed if autoprefixing */
-  display: flex;
-  margin: 1rem;
-
-  /* gutter size offset */
-  width: auto;
-}
-
-.my-masonry-grid_column {
-  width: 100% !important;
-  /* gutter size */
-  background-clip: padding-box;
-
-  > div {
-    /* change div to reference your elements you put in <Masonry> */
-    background: grey;
-    margin-bottom: 30px;
-  }
-}
-
 .about {
   margin-top: 20vh !important;
   ul {
@@ -663,5 +637,47 @@ p.position {
     padding: none !important;
     margin: none !important;
     color: #ffffff !important;
+  }
+}
+
+my-masonry-grid {
+  display: -webkit-box;
+
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+
+  /* Not needed if autoprefixing */
+  display: flex;
+  margin: 1rem;
+
+  /* gutter size offset */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  width: 100% !important;
+  /* gutter size */
+  background-clip: padding-box;
+
+  > div {
+    /* change div to reference your elements you put in <Masonry> */
+    background: grey;
+    margin-bottom: 30px;
+  }
+}
+
+.proyecto-img {
+  max-width: 320px;
+}
+
+.user-flow {
+  max-width: 100% !important;
+  width: auto;
+}
+
+@include phone {
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 }

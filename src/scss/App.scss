@@ -40,11 +40,12 @@ html {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #0c0920;
-  background-color: #02000f;
+  color: #ffffff;
+  background-color: #000000 !important;
 }
 .proyecto-contenedor {
   margin-top: 5vh;
+  margin-bottom: 5rem;
   border-radius: 1rem;
   box-sizing: border-box;
   padding: 1rem 2rem;

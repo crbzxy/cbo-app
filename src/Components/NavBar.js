@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ExternalLink } from "react-external-link";
 import * as FaIcons from "react-icons/fa";
-import Logo from '../logo.png';
-//import Logo from "../../img/logo.png";
+//import Logo from '../logo.png';
+import Logo from "../img/logo-m.png";
 
 
 function Navbar() {
