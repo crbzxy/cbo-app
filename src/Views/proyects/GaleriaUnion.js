@@ -39,25 +39,26 @@ function GaleriaUnion() {
             Rol  Diseñador:  UI-UX , Desarrollador Front-End      </Badge>
           <Badge bg="light" text="dark">
 
-            Público objetivo: 20 a 70 años      </Badge>
+            Público objetivo: 20 a 90 años      </Badge>
 
           <Badge bg="light" text="dark">
-            Duración: 5 semanas
+            Duración: Actual
           </Badge>
           <Badge bg="light" text="dark">
-            Herramientas: Adobe XD,Photoshop, Illustrator
+            Herramientas: Adobe XD,Photoshop, Illustrator,Vs code
           </Badge>
-          <Badge bg="light" text="dark">Tecnologías: Scss, React, Node.js, Google maps API</Badge>
+          <Badge bg="light" text="dark">Tecnologías: Scss, React, Node.js, Mailchimp</Badge>
         </div>
 
         <h3>
           El reto del proyecto
         </h3>
         <p>
-          El proyecto se retomó con el objetivo de actualizar y agregar nuevas funcionalidades al producto digital anterior, buscando una ventaja competitiva, donde el reto principal fue mantener la identidad visual haciendo uso de nuevas tecnologías que permitieran una mejora  en la experiencia de los usuarios y alinear lógicas del negocio a la campaña digital.
+          El proyecto fue tomado desde el inicio y se ha configurado de poco en poco de la mano de distintos diseñadores y dentro de diferentes actividades, el sitio ha cambiado bastante desde el día uno y se ha buscado iterar conforme las actividades de la galería
+
 
         </p>
-        <h3>User flow</h3>
+
         {/* <img className='img-fluid pb-4' src={UserFlow} alt="User-Flow GaleriaUnion.mx" /> */}
 
 

@@ -38,7 +38,8 @@ function Lapi() {
         </h2>
         <a href="https://xd.adobe.com/view/3a889726-7358-43b4-748e-c210237eba96-4cb9/" className='btn btn-outline-dark'> Ver prototipo</a>
 
-        <p className='mt-5'>Lapi.mx es una plataforma que permite realizar búsquedas de puntos disponibles para anuncios en el espacio público de interés para campañas de comunicación en distintas áreas de la república mexicana.
+        <p className='mt-5'>Lapi.mx es una plataforma del laboratorio lapi, con el cual busca acercar y dar a conocer distintos productos de orden farmacéutico, en donde se habilitó la funcionalidad de compra por medio de un carrito y la muestra de sus productos por categorías.
+
         </p>
         <div className="contenedor-badges">
 
@@ -47,22 +48,22 @@ function Lapi() {
             Rol:  Diseñador UI-UX , Desarrollador Front-End      </Badge>
           <Badge bg="light" text="dark">
 
-            Público objetivo: 20 a 70 años      </Badge>
+            Público objetivo: 18 a 90 años      </Badge>
 
           <Badge bg="light" text="dark">
-            Duración: 5 semanas
+            Duración: 5 meses
           </Badge>
           <Badge bg="light" text="dark">
             Herramientas: Adobe XD,Photoshop, Illustrator
           </Badge>
-          <Badge bg="light" text="dark">Tecnologías: Scss, React, Node.js, Google maps API</Badge>
+          <Badge bg="light" text="dark">Tecnologías: Scss, Angular, Node.js, Material UI</Badge>
         </div>
 
         <h3>
           El reto del proyecto
         </h3>
         <p>
-          El proyecto se retomó con el objetivo de actualizar y agregar nuevas funcionalidades al producto digital anterior, buscando una ventaja competitiva, donde el reto principal fue mantener la identidad visual haciendo uso de nuevas tecnologías que permitieran una mejora  en la experiencia de los usuarios y alinear lógicas del negocio a la campaña digital.
+          Lapi solicitaba un rediseño de su producto digital anterior tomando como referencia una estrategia de benchmarking en donde se requería generar las mismas funcionalidades que sus competencia principal, asì como el desarrollo de una nueva identidad visual en torno a la imagen corporativa
 
         </p>
 

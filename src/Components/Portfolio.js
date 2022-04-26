@@ -22,7 +22,7 @@ function Portfolio() {
       link: "/lapi",
       description: "Lapi, rediseño y desarrollo ui-ux de una plataforma de gestión de inventarios para una empresa de servicios de salud.",
     },
-    { id: 3, name: "Ecoglobe", img: `${Foto2}`, link: "/ecoglobe" },
+    { id: 3, name: "Ecoglobe", img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/ecoglobe.png?alt=media&token=2bc4ebb4-e139-4b94-8f67-033abd3f13d8`, link: "/ecoglobe" },
     {
       id: 4,
       name: "Ship Guru",
@@ -30,7 +30,7 @@ function Portfolio() {
       link: "/shipguru",
       description: "Desarrollo de logo para Ship Gurú plataforma empresarial de paquetería y envíos en México. ",
     },
-    { id: 5, name: "ADSU", img: `${Foto2}`, link: "/adsu" },
+    { id: 5, name: "ADSU", img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/adsu.png?alt=media&token=dbe410fb-656c-4585-ae8a-797a7ee4f8db`, link: "/adsu" },
 
     { id: 6, name: "Go pharma", img: `${Foto2}`, link: "/go-pharma" },
     { id: 7, name: "ADN Tienda en línea", img: `https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/tiendaenlinea.png?alt=media&token=b2100705-f312-4021-a1ef-1a342cc0fd5a`, link: "/tienda-en-linea", description: "Landing page para registro de leads de la campaña (Tienda en línea de ADN Secciòn Amarilla)", },
