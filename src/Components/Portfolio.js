@@ -83,7 +83,7 @@ function Portfolio() {
             </Masonry>
           </div>
         </div>
-        <img src={Dassets} className="portafolio-img" data-aos="fade-up" alt="Carlos Boyzo Oregòn" />
+        <img style={{ zIndex: "40", position: "absolute", bottom: "20px" }} src={Dassets} className="portafolio-img" data-aos="fade-up" alt="Carlos Boyzo Oregòn" />
 
       </section>
     </>
