@@ -52,10 +52,13 @@ function Contacto() {
         <link rel="canonical" href="https://carlosboyzo.com/contacto" />
       </Helmet>
       <Navbar />
+
       <div className="section" data-aos="fade-in">
         <div className="contenedor contacto">
+
           <div className="col-img">
-            <img src="/" alt="hola" />
+            <h1>Contáctame</h1>
+            <img className="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/hola.png?alt=media&token=77ca5bc1-4f67-49c6-bef6-ac7d40d3cab9" alt="hola" />
           </div>
           <div className="col-form">
             {!sent ? (
@@ -95,11 +98,11 @@ function Contacto() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 >
-                  Write something here
+                  Escribe algo aquí
                 </textarea>
 
                 <button className="btn-primario" type="submit">
-                  Send Email
+                  Enviar mensaje
                 </button>
               </form>
             ) : (

@@ -24,9 +24,11 @@ import TiendaEnlinea from "../Views/proyects/TiendaEnlinea";
 function GeneralRouter() {
   return (
     <>
+
       <BrowserRouter>
         <ScrollToTop />
         <AuthProvider>
+
           <Routes>
             <Route path="/" element={<Start />} />
             <Route path="/arte" element={<Arte />} />
@@ -56,6 +58,7 @@ function GeneralRouter() {
             <Route path="/go-pharma" element={<GoPharma />} />
             <Route path="/tienda-en-linea" element={<TiendaEnlinea />} />
           </Routes>
+
         </AuthProvider>
 
       </BrowserRouter>

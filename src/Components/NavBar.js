@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ExternalLink } from "react-external-link";
 import * as FaIcons from "react-icons/fa";
-import Logo from '../logo.svg';
-//import Logo from "../../img/logo.png";
+//import Logo from '../logo.png';
+import Logo from "../img/logo-m.png";
 
 
 function Navbar() {
@@ -76,7 +76,7 @@ function Navbar() {
         </a>
 
 
-        <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO-ESP.pdf?alt=media&token=7b241bf2-5867-40e3-9d79-772fd04d8c28" download>CV </a>
+        <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-Carlos-Boyzo-Oregon-DesarrolladorWeb-UI-UX.pdf?alt=media&token=62205b76-4e0e-4a30-b0fb-66c1a979b9fc" download>CV </a>
 
 
         <Link

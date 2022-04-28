@@ -3,7 +3,7 @@ import { ExternalLink } from "react-external-link";
 import { Link } from "react-router-dom";
 //import * as FaIcons from "react-icons/fa";
 import NavBar from "../Components/NavBar";
-
+import Dassets from "../img/3dassets.png";
 import Me from "../img/me-moshed.gif";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -123,29 +123,71 @@ function Design() {
       <br />
       <span id="sobremi" />
       <img src={Pattern3} alt="tran" className="pattern3" data-aos="fade-up" />
-      <section className="about  mb-5" data-aos="fade-up">
+      <section className="about-start  pb-5" data-aos="fade-up">
+        <div className="row">
+          <div className=" container">
+            <img src={Dassets} className="  portafolio-img-start" alt="Carlos Boyzo Oregòn 3d" />
+          </div>
+        </div>
+
+        <img style={{ top: "1vh" }} src={CircleBlue} alt="tran" className="circle-blue assets" />
         <div className=" d-flex container about-container">
-          <div className="col  img-left"><img src={Me} alt="tran" style={{ filter: `blur(1px)`, borderRadius: '400px', maxWidth: '300px', margin: '16px', boxSizing: 'border-box', backgroundColor: '#101835' }} /></div>
-          <div className="col text-left  ">
-            <small>Mucho gusto</small>
+          <div className="col  img-left">
+            <img src={Me} alt="tran" style={{ filter: `blur(1px)`, borderRadius: '400px', maxWidth: '280px', margin: '16px', boxSizing: 'border-box', backgroundColor: '#101835' }} />
+
             <br />
-            <h3>
-              Soy Diseñador y desarrollador web UI-UX-IXD con más de 4 años de experiencia.
-            </h3>
+            <p className="frase" style={{ TextAlign: "left", padding: '2rem' }}>
+              <q>
+                La verdadera imaginación es aquella que dinamita, elucida,
+                inyecta microbios esmeraldas en otras imaginaciones. En poesía y
+                en lo que sea, la entrada en materia tiene que ser ya la entrada
+                en aventura.
+              </q>
+            </p>
+
+            <small>
+              Déjenlo todo, nuevamente by <strong>Roberto Bolaño </strong> México D. F. - 1976
+            </small>
+            <br />
+            <br />
+            <hr />
+            <br />
+            <br />
+            <iframe className="spotify" title="spotify" style={{ borderRadius: 12 }} src="https://open.spotify.com/embed/playlist/4uAi1Lc3rCwfbvSu0LBgxr?utm_source=generator" width="70%" height={80} frameBorder={0} allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" />
+
+
+
+
+            <br />
+            <br />
+          </div>
+          <div className="col text-left  ">
+            <small>MX/CDMX</small>
+            <br />
+            <h1>Carlos Boyzo Oregón</h1>
+            <br />
+            <p className="titulo" style={{ fontSize: "100%", }}>
+              Diseñador y desarrollador web UI-UX
+            </p>
             <p>
-              He trabajado como consultor en desarrollo web, creativo y manager para distintos clientes.
+              Hola, me enfoco en crear soluciones y experiencias digitales positivas, que conecten los objetivos comerciales de mis clientes en diferentes verticales de negocio.
+
             </p>
             <p className="titulo">
               Competencias técnicas
             </p>
             <ul>
               <li>Diseño gráfico y comunicación visual para  wireframes y prototipos</li>
-              <li>Entendimiento de legunajes de programación web</li>
+              <li>Diseño de interfaces y experiencias de usuario</li>
               <li>Experiencia como como lider en equipos</li>
+              <li>Desarrollador Web</li>
             </ul>
-            <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO-ESP.pdf?alt=media&token=7b241bf2-5867-40e3-9d79-772fd04d8c28" download className="btn-primario"> Descarga mi CV </a>
-
-
+            <p>Sígueme en mis redes sociales</p>
+            <a href="https://foundation.app/@perrodimensional" download className="btn-primario">foundation </a>
+            <a href="https://www.instagram.com/perrodimensional/" download className="btn-primario"> Instagram </a>
+            <a href="https://www.linkedin.com/in/carlosboyzo/" download className="btn-primario"> LinkedIn </a>
+            <br />
+            <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO-ESP.pdf?alt=media&token=7b241bf2-5867-40e3-9d79-772fd04d8c28" download className="btn-secundario"> Descarga mi CV </a>
 
           </div>
         </div>
