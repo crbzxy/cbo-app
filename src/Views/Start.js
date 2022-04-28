@@ -105,11 +105,12 @@ function Start() {
               <li>Desarrollador Web</li>
             </ul>
             <p>Sígueme en mis redes sociales</p>
-            <a href="https://hicetnunc.art/PerroDimensional/" download className="btn-primario"> HIC ET NUNC </a>
-            <a href="https://www.instagram.com/perrodimensional/" download className="btn-primario"> Instagram </a>
-            <a href="https://www.linkedin.com/in/carlosboyzo/" download className="btn-primario"> LinkedIn </a>
+            <a href="https://github.com/crbzxy" className="btn-primario"> GITHUB </a>
+            <a href="https://objkt.com/profile/tz1QFG3JhYPB6LUK76qBoB1E7TYYCABsmND9/created" className="btn-primario"> objkt.com </a>
+            <a href="https://www.instagram.com/perrodimensional/" className="btn-primario"> Instagram </a>
+            <a href="https://www.linkedin.com/in/carlosboyzo/" className="btn-primario"> LinkedIn </a>
             <br />
-            <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-CBO-ESP.pdf?alt=media&token=7b241bf2-5867-40e3-9d79-772fd04d8c28" download className="btn-secundario"> Descarga mi CV </a>
+            <a href="https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-Carlos-Boyzo-Oregon-DesarrolladorWeb-UI-UX.pdf?alt=media&token=62205b76-4e0e-4a30-b0fb-66c1a979b9fc" download className="btn-secundario"> Descarga mi CV </a>
 
           </div>
         </div>
