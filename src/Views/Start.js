@@ -159,7 +159,7 @@ function Start() {
             </a>
             <br />
             <a
-              href='https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-Carlos-Boyzo-Oregon-DesarrolladorWeb-UI-UX.pdf?alt=media&token=62205b76-4e0e-4a30-b0fb-66c1a979b9fc'
+              href='https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-Carlos-Boyzo-Oregon-DesarrolladorWeb-UI-UX.pdf?alt=media&token=60994f15-15c6-44df-9c7e-ff70b7274e69'
               download
               className='btn-secundario'>
               {' '}
