@@ -235,7 +235,7 @@ function Design() {
             </a>
             <br />
             <a
-              href='https://firebasestorage.googleapis.com/v0/b/react-auth-cbo-app.appspot.com/o/CV-Carlos-Boyzo-Oregon-DesarrolladorWeb-UI-UX.pdf?alt=media&token=62205b76-4e0e-4a30-b0fb-66c1a979b9fc'
+              href='https://firebasestorage.googleapis.com/v0/b/cbo-assets.appspot.com/o/CV-Carlos-Boyzo-Oregon-DesarrolladorWeb-UI-UX%20(1).pdf?alt=media&token=5efde9a5-30ed-4912-b7c7-711fb90c0218'
               download
               className='btn-secundario'>
               {' '}
