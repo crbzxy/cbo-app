@@ -132,7 +132,7 @@ function Start() {
               </li>
               <li>Diseño de interfaces y experiencias de usuario</li>
               <li>Experiencia como como lider en equipos</li>
-              <li>Desarrollador Web</li>
+              <li>Desarrollador Web Front End (REACT, VUE)</li>
             </ul>
             <p>Sígueme en mis redes sociales</p>
             <a href='https://github.com/crbzxy' className='btn-primario'>
