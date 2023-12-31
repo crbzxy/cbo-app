@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import logo from '../logo.svg';
 import CircleBlue from '../img/circle-blue.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-//import Pattern3 from "../img/me-moshed.gif"
 import Me from '../img/me-moshed.gif';
 import Dassets from '../img/3dassets.png';
 import { useAuth } from '../context/AuthContext';
-import { Helmet } from 'react-helmet-async';
-function Start() {
+
+const Start = () => {
   useEffect(() => {
     AOS.init({
       offset: 120,
@@ -22,16 +21,10 @@ function Start() {
       anchorPlacement: 'bottom-top',
     });
   }, []);
-  const { user, logout, loading } = useAuth();
-  const navigate = useNavigate();
-  const handleLogout = async () => {
-    await logout();
-    navigate('/login');
-  };
-  console.info(user);
-  console.info(handleLogout);
-  console.log(user);
-  if (loading)
+
+  const { loading } = useAuth();
+
+  if (loading) {
     return (
       <section>
         <div className='contenedor' data-aos='fade-in'>
@@ -39,13 +32,15 @@ function Start() {
         </div>
       </section>
     );
+  }
+
   return (
     <>
       <Helmet>
         <title>Carlos Boyzo Oregón</title>
         <link rel='canonical' href='https://www.carlosboyzo.com/' />
       </Helmet>
-      <section className='about-start  pb-5' data-aos='fade-up'>
+      <section className='about-start pb-5' data-aos='fade-up'>
         <div className='row'>
           <div className=' container'>
             <img
@@ -68,7 +63,7 @@ function Start() {
               src={Me}
               alt='tran'
               style={{
-                filter: `blur(1px)`,
+                filter: 'blur(1px)',
                 borderRadius: '400px',
                 maxWidth: '280px',
                 margin: '16px',
@@ -78,7 +73,7 @@ function Start() {
             />
 
             <br />
-            <p className='frase' style={{ TextAlign: 'left', padding: '2rem' }}>
+            <p className='frase' style={{ textAlign: 'left', padding: '2rem' }}>
               <q>
                 La verdadera imaginación es aquella que dinamita, elucida,
                 inyecta microbios esmeraldas en otras imaginaciones. En poesía y
@@ -91,11 +86,9 @@ function Start() {
               Déjenlo todo, nuevamente by <strong>Roberto Bolaño </strong>{' '}
               México D. F. - 1976
             </small>
-            <br />
-            <br />
-            <hr />
-            <br />
-            <br />
+
+            <hr className='my-5' />
+
             <iframe
               className='spotify'
               title='spotify'
@@ -124,17 +117,33 @@ function Start() {
               positivas, que conecten los objetivos comerciales de mis clientes
               en diferentes verticales de negocio.
             </p>
-            <p className='titulo'>Competencias técnicas</p>
+            <p className='titulo'>Competencias técnicas: </p>
             <ul>
-              <li>
-                Diseño gráfico y comunicación visual para wireframes y
-                prototipos
-              </li>
-              <li>Diseño de interfaces y experiencias de usuario</li>
-              <li>Experiencia como como lider en equipos</li>
-              <li>Desarrollador Web Front End (REACT, VUE)</li>
+              <ul>
+                <li>
+                  Diseño UX/UI avanzado con enfoque en accesibilidad e
+                  inclusión.
+                </li>
+                <li>
+                  Desarrollo Front-End con React enfocado en desarrollo ágil.
+                </li>
+                <li>Desarrollo de aplicaciones móviles con React Native.</li>
+                <li>
+                  Liderazgo de equipos y gestión de proyectos con metodologías
+                  ágiles.
+                </li>
+                <li>Arquitectura Front-End y optimización de rendimiento.</li>
+                <li>
+                  Desarrollo con TypeScript para mejor calidad y escalabilidad
+                  de código.
+                </li>
+                <li>Integración de APIs, conocimientos básicos de back-end.</li>
+                <li>
+                  Aprendizaje continuo y exploración de nuevas tecnologías.
+                </li>
+              </ul>
             </ul>
-            <p>Sígueme en mis redes sociales</p>
+            <p>Sígueme en mis redes sociales: </p>
             <a href='https://github.com/crbzxy' className='btn-primario'>
               {' '}
               GITHUB{' '}
@@ -170,6 +179,6 @@ function Start() {
       </section>
     </>
   );
-}
+};
 
 export default Start;
