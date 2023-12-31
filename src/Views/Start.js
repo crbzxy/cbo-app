@@ -90,15 +90,14 @@ const Start = () => {
             <hr className='my-5' />
 
             <iframe
-              className='spotify'
-              title='spotify'
               style={{ borderRadius: 12 }}
               src='https://open.spotify.com/embed/playlist/4uAi1Lc3rCwfbvSu0LBgxr?utm_source=generator'
-              width='70%'
+              width='80%'
               height={80}
               frameBorder={0}
               allowFullScreen
               allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+              loading='lazy'
             />
 
             <br />
