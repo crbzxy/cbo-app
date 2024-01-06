@@ -90,6 +90,7 @@ const Start = () => {
             <hr className='my-5' />
 
             <iframe
+              title='cbo-music'
               style={{ borderRadius: 12 }}
               src='https://open.spotify.com/embed/playlist/4uAi1Lc3rCwfbvSu0LBgxr?utm_source=generator'
               width='80%'
